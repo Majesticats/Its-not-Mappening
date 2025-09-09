@@ -8,7 +8,7 @@
 
  - Bruce Fernandes, bruce2005.ind@gmail.com *Main contact*
  - Olaleye Victor, @gmail.com
- - Alex Thompson, @gmail.com
+ - Alex Thompson, alex.neil.thompson@gmail.com
  - Gowan  Cathers, @gmail.com
  - Nguyen Du (MAX), @gmail.com
  - Md Zahidur Rahman Nabil, @gmail.com

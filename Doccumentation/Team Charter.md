@@ -37,13 +37,13 @@ The team would meet in a designated location set up by Bruce every Friday of the
 
 The roles will be listed as follows:
 
- - Alex:​
-  - Programmer
-  - Visual Effects support
+- Alex:
+ - ​Programmer
+ - Visual Effects support
 
- - Bruce:​
-  - Doccumentation
-  - Presentation 
+- Bruce:
+ - ​Doccumentation
+ - Presentation 
  
  - Gowan:
   - Visual effects

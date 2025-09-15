@@ -22,28 +22,11 @@
 
 ## Key features and discussion
 
-
-### Interactables objects
-
-
-
-### Non-Player Characters (NPC)
-
-
-### Ticket Shop
-
-
+###
 
 ## Preliminary interface sketches
 
-
-### Arcade Map
-
-
-
-### Ticket Shop
-
-
+###
 
 ## Scaling options
 

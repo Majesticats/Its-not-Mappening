@@ -47,8 +47,8 @@ The roles will be listed as follows:
   * Presentation 
  
  - Gowan:
-  - Visual effects
-  - Programmer
+  * Visual effects
+  * Programmer
  
  - Max:
    * Programmer

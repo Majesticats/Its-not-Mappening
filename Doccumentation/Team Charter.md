@@ -67,15 +67,24 @@ Any secondary tasks like support or preparing deliverables would be given to the
 
 ## Planned team meeting time(s) and communication plans
 
+The team is to meet on Friday at 10am before the lab, we are to discuss the presentation or quiz, depending on what we have to do that day and finalise any presentation work or discuss our quiz cheat-sheets. This meeting will be held either in the library or cafetaria depending on the consensus of the members at the time.
+Any extra meeting must be scheduled atleast 16 hours before the meeting time and quorum of atleast 3 members must be met meetings of this sort can be conducted on discord or in person
+All our communication is to be done on discord in the "Mapper" discord group chat.
 
 
 ## Deadlines and Deliverables
 
+Team members will volunteer to do tasks that fall into their skills and expertise. General documentation tasks are to be done by Bruce. Organisation will be shared by the version control head and the team lead. 
 
+If a deadline is unmet or undeliverable for whatever reason there will be a discussion between project organization and the team member involved and an appropriate resolution will be found.
 
 ## Conflict resolution scheme
 
+Conflicts will be decided democratically, however if a consensus is not met the team leader will decided on the resolution by themself.
+If at any point the team leader is not accepted by all other members, the leader will have to step down and another leader will be democratically elected.
 
+If any conflicts cannot be resolved among the team, we will approach Professor David Wessels to resolve the conflict.
+Any issues and concerns will be brought up on the friday meeting.
 
 ## AI Policy
 

@@ -6,12 +6,12 @@
 
 ## Members and contact email
 
- - Bruce Fernandes, bruce2005.ind@gmail.com *Main contact*
- - Olaleye Victor, @gmail.com
- - Alex Thompson, alex.neil.thompson@gmail.com
- - Gowan  Cathers, @gmail.com
- - Nguyen Du (MAX), @gmail.com
- - Md Zahidur Rahman Nabil, @gmail.com
+  -  Alex Thompson, alex.neil.thompson@gmail.com
+  -  Bruce Fernandes, bruce2005.ind@gmail.com *Main contact*
+  -  Gowan  Cathers, gowan.cathers@my.viu.ca
+  -   Md Zahidur Rahman Nabil, zahidurrahmannabil@gmail.com
+  -  Nguyen Du (MAX), nguyentdu.work@gmail.com
+  -  Olaleye Victor, olaleyevictor51@gmail.com
 
 ## Project Overview
 

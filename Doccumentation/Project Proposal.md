@@ -21,7 +21,7 @@ Our project proposes to develop an interactive 2D map of VIU that will allow use
 
 ## Target audience and motivation 
 
-Our target audience are primarily students. 
+Our target audience are mainly students. 
 
 The primary motivation behind making this navigation system is we want to make every students campus life easier and more accessible. 
 

@@ -59,13 +59,30 @@
         </div>
     </div>
 
+     <script>
+        /// Generate Current Path
+        const currentPath = [];
+        function getCurrentPath(path){
+            currentPath.length = 0;
+            // Temp logic until we have a actual system
+            for(let i = 0; i < nodes.length; i ++){
+                path.push(nodes[i])
+                console.log("Path: "+ path);
+            }
+            // Temp logic until we have a actual system
+        }
+    </script>
+
     <script>
-        /// Other user Controles ///
+        /// Path Controles ///
+        const maxPathLength = 4; // this should be the max number of paths in the longest route. this should be an equation not hard coded
+
         document.addEventListener("keydown",(event) =>{
             if (event.key === "x" || event.key === "X"){
                 console.log("x Press");
-                for(let i = 0; i < max-1; i++){
-                    generateLine(nodes[i],nodes[i+1],paths[i]);
+                getCurrentPath(currentPath);
+                for(let i = 0; i < maxPathLength; i++){
+                    generateLine(currentPath[i],currentPath[i+1],paths[i]);
                     console.log("Path:" + i + " displayed");
                 }
             }
@@ -74,33 +91,34 @@
     </script>
 
     <script>
-        /// Create Nodes Paths ///
-        const max = 5;
+        /// Create Nodes Paths ///       
+        const NodeCount = 5; // make this into a auto generating number off of the count of #nodes somehow
         let paths = [];
         let nodes = [];
-        map = document.getElementById("map")
+        map = document.getElementById("map");
 
-        for(let i = 0; i < max; i++){
+
+        for(let i = 0; i < NodeCount; i++){
             const node = document.createElement("node");
             node.id = "node"+i;
-            node.className = "node"
+            node.className = "node";
             map.appendChild(node);
             console.log("Node:" + i + " Created");
             nodes.push(node);
-            console.log(nodes)
+            console.log(nodes);
         }
 
 
-        for(let i = 0; i < max - 1; i++){
-            const div = document.createElement("div")
-            div.className = "path"
+        for(let i = 0; i < maxPathLength; i++){
+            const div = document.createElement("div");
+            div.className = "path";
             div.id = "path"+i
             map.appendChild(div);
             console.log("Path:" + i + " Created");
             const path1 = document.getElementById("path"+i);
             paths.push(div);
             console.log(paths);
-        }
+        } 
     </script>
     
     <script>

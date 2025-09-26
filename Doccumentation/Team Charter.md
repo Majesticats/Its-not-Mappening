@@ -1,6 +1,6 @@
 ﻿# CSCI 265 Initial Team Charter
 
-## Team name: Mapers
+## Team name: The Mappening
 
 ## Project/product name: Viu map upgrade
 

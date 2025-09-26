@@ -106,6 +106,8 @@ An overall breakdown of the team's strengths are listed below:
   - Max is a mathematician and programmer and is happy to work on code and logic.
   - Nabil
   - Victor is great at design and programming and so will be working on front end of the website.
+
+
 On the other hand, the team's lacking are as follows:
   - There is an overall lack of experience in a team environment by most of the team and so we have to adapt to each other.
   - Bruce is quite talkative and can completely derail the conversation with YAP.

@@ -27,6 +27,9 @@ We hope to help everyone with their accessibility needs and efficient in their s
 ## Key features and discussion
 Our system will include a 2D interactive map of VIU that will help students and visiors to naviagte inside VIU. Users will be able to search for buildings and facilities and receive direction optimized for accesibility and speed.
 
+## Preliminary Sketches 
+
+
 ## Scaling options
 Initially, the project will be limited to the VIU campus, but the design will support scaling to other universities or institutions. By keeping the architecture modular, additional campuses can be added without reworking the entire system. Future scaling may include 3D map, indoor navigation for buildings, and the ability to handle real-time updates such as clousers for construction. 
 

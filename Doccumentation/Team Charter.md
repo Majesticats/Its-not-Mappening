@@ -80,19 +80,34 @@ If a deadline is unmet or undeliverable for whatever reason there will be a disc
 
 ## Conflict resolution scheme
 
-Conflicts will be decided democratically, however if a consensus is not met the team leader will decided on the resolution by themself.
+Conflicts will be decided democratically, however if a consensus is not met then the team leader will decide on the resolution by themself.
 If at any point the team leader is not accepted by all other members, the leader will have to step down and another leader will be democratically elected.
 
 If any conflicts cannot be resolved among the team, we will approach Professor David Wessels to resolve the conflict.
 Any issues and concerns will be brought up on the friday meeting.
 
 ## AI Policy
+None of the projects code or assets are to be generated with AI.​
 
-
+Using AI for non-generative purposes, investigatory, learning, etc., is each individual team member's prerogative.
+Otherwise we will be following the VIU academic code of conduct for our AI policy.
 
 ## Intellectual property rights
+All members will retain rights to what content they create. Content that is created by multiple people will be the property of all members involved.
 
-
+The team are welcome to have this program in their portfolios but no other use of the code and program are allowed to be used for any purpose without the consent of all the members.
 
 ## Discussion of team strengths/weaknesses
+The group all have experience in programming and coding before and are able to collaborate in groups
+An overall breakdown of the team's strengths are listed below:
+  - Alex is a programmer with great experience in Python and other languages
+  - Bruce is a programmer with experience in Java, C++ and operating systems. He is also good at public speaking and has theatre experience.
+  - Gowan is an avid programmer with experience in multiple languages and design and will therefore be working on the design for our website.
+  - Max is a mathematician and programmer and is happy to work on code and logic.
+  - Nabil
+  - Victor is great at design and programming and so will be working on front end of the website.
+On the other hand, the team's lacking are as follows:
+  - There is an overall lack of experience in a team environment by most of the team and so we have to adapt to each other.
+  - Bruce is quite talkative and can completely derail the conversation with YAP.
 
+In conclusion, we are taking each step carefully to not let anyone go beyond their skills and capabilities which might make a team feel overwhelmed or burned out.

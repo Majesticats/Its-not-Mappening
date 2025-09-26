@@ -27,28 +27,30 @@ The primary motivation behind making this navigation system is we want to make e
 
 ## Key features and discussion
 
-###
+Our system will include a 2D interactive map of VIU that will help students and visiors to naviagte inside VIU. Users will be able to search for buildings and facilities and receive direction optimized for accesibility and speed. 
 
 ## Preliminary interface sketches
 
 ###
 
 ## Scaling options
-
+Initially, the project will be limited to the VIU campus, but the design will support scaling to other universities or institutions. By keeping the architecture modular, additional campuses can be added without reworking the entire system. Future scaling may include 3D map, indoor navigation for buildings, and the ability to handle real-time updates such as clousers for construction. 
 
 ### Core aspects
-- 
-- 
-- 
-- 
-- 
+- Interactive 2d campus map with search and navigation
+- Route planning based on accesibility and speed
+- Support for mobile and desktop browsers
+- Simple and user friendly interface
 
 ### Secondary features
-- 
-
+- Points of interest (cafeteria, library, washrooms, parking)
+- Ability to bookmark frequently visited locations
+- Feedback system for reporting errors or suggesting improvements
 
 ### Stretch goals
-- 
-
-
+- making the map 3D.
+- Navigation inside buildings. 
+- Make the system usbale without internet.
+  
 ## Risks and potential issues
+The main risk will be the accuracy of data. If the information is not updated timlely it will lose users. Another big challenge is implementing accesible routes and ensuring the the map is running without any performance issue. finally one last issue is attracting new users. People who are already using Goggle Map, we have convince them to use our system. 

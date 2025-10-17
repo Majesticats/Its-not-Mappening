@@ -1,0 +1,42 @@
+html{
+    background-color: #000;
+}
+
+.background{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.document{
+    position: fixed;
+    height: 90vh;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#LightMask{
+    z-index: 3;
+}
+
+#textBox{
+    z-index: 2;
+    position: relative;
+    top: 0px;
+}
+
+#paper{
+    z-index: -1;
+    position: relative;
+    top: -5vh;
+    height: 90vh;
+}
+
+#RockFace{
+    z-index: 0;
+}

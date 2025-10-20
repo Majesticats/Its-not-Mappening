@@ -14,7 +14,7 @@ Bruce Fernandes, bruce2005.ind@gmail.com
 4. Glossary
 5. Appendix
 
-##  design overview
+##  Design overview
 Cave Diving is a 2D browser based game filled with many adventures and riddles. Players will be exploring cave enviorments, solve riddles and complete puzzles to unlock upper levels. Our main focus is education through exploration. Players will learn several concepts of math and others by interacting with in-game challenges.  
 System Context
 Users: General players and students 

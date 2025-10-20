@@ -27,7 +27,7 @@ Browser Game Interface
    ↓↑
 Game Logic Engine → Quiz/Riddle Data
    ↓↑
-Progress Save System (Local Storage)
+Progress Save System (localStorage)
 
 ## The logical design
 System Decomposition:
@@ -41,8 +41,31 @@ root/
     ├── markup/    → Individual HTML files (menu, game, quiz)
     └── styles/    → Page-specific CSS files
 
-## Preliminary thoughts on the transition from the logical design to an implementation
+Interactions:
+Player ↔ UI Renderer: Inputs (keyboard/mouse), outputs (display updates).
+UI Renderer ↔ Game Engine: Scene updates, event handling.
+Game Engine ↔ Quiz Manager: Trigger riddles or quiz pop-ups when reaching checkpoints.
+Quiz Manager ↔ Progress Tracker: Saves results and unlocks new levels.
+
+## Transition from the logical design to an implementation
+Languages: HTML 5, CSS 3, JavaScript (ES6)
+Tools: 
+Repository Structure: root/styles, root/scripts, root/pages/markup, root/pages/styles
+Interfaces: 
+
+Example File List:	
+/scripts/game.js = main loop and rendering	
+/scripts/quiz.js = quiz logic	
+/scripts/save.js = progress storage	
+/pages/markup/index.html = home screen	
+/pages/markup/game.html = main game	
+/styles/global.css = shared UI styling	
+/pages/styles/game.css = level-specific styling
 
 ## A glossary: This is optional but often nice to have: if a term is specific to the product or is unlikely to be known by the average reader (e.g. a random second year CS student) then include an entry for it
+HUD: Heads-Up Display showing score or hints.
+Checkpoint: In-game location that triggers a quiz/riddle.
+LocalStorage: Browser storage API used to save data locally.
+Riddle Node: Interactive object that opens a puzzle UI.
 
 ## Appendix

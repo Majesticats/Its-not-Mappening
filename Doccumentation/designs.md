@@ -20,21 +20,20 @@ System Context
 Users: General players and students 
 External systems: Browser runtime (HTML/CSS/JS), local storage for progress, optional quiz API (future).
 
-# Context Diagram (Top Level DFD):
+Context Diagram (Top Level DFD):
 Player
    ↓↑
 Browser Game Interface
    ↓↑
 Game Logic Engine → Quiz/Riddle Data
    ↓↑
-Progress Save System (localStorage)
+Progress Save System (Local Storage)
 
 ## The logical design
-
-# System Decomposition
+System Decomposition:
 The system follows a layered, modular web-based design:
 
-# Root Directory Structure
+Root Directory Structure:
 root/
 ├── styles/        → CSS files used globally across pages
 ├── scripts/       → JavaScript files controlling logic, animation, and interactivity

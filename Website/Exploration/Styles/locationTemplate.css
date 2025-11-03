@@ -1,0 +1,63 @@
+/* Note that each section is organized alphabetically, not by scope */
+
+/* Metadata */
+/* Color Palette Definition */
+:root{
+    --base: #081020;
+    --dark: #040810;
+    --light: #182030;
+    --accent1: #084;
+    --accent1-dark: #063;
+    --accent1-light: #0a5;
+    --accent2: #048;
+    --accent2-dark: #036;
+    --accent2-light: #05a;
+    --text: #e0fff0;
+}
+
+/* Tag Selectors */
+body{
+    /* Set margin */
+    margin: 0;
+}
+
+html{
+    /* Set font standard */
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Set page background */
+    background-color: var(--dark);
+    /* Set text colour */
+    color: var(--text);
+}
+
+/* Class Selectors */
+.gridColumn{
+    /* Set background colour */
+    background-color: var(--light);
+    /* Setup Display */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* Set padding */
+    padding: 48px;
+    /* Set margin */
+    margin: 0;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.textContent{
+    padding: 24px;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px var(--accent2-dark), inset 0 0 10px 5px var(--accent2-dark);
+}
+
+/* ID Selectors */
+#title{
+    grid-column: 1 / span 4;
+}
+
+#introText{
+    grid-column: 1 / span 2;
+}

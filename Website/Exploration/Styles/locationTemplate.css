@@ -21,6 +21,11 @@ body{
     margin: 0;
 }
 
+h2{
+    position: relative;
+    top: 24px;
+}
+
 html{
     /* Set font standard */
     font-size: 20px;
@@ -32,18 +37,9 @@ html{
 }
 
 /* Class Selectors */
-.gridColumn{
-    /* Set background colour */
-    background-color: var(--light);
-    /* Setup Display */
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* Set padding */
-    padding: 48px;
-    /* Set margin */
-    margin: 0;
-    margin-left: 120px;
-    margin-right: 120px;
+.flexbox{
+    display: flex;
+    margin-bottom: 32px;
 }
 
 .textContent{
@@ -54,10 +50,76 @@ html{
 }
 
 /* ID Selectors */
-#title{
-    grid-column: 1 / span 4;
+#banner{
+    /* Set position */
+    position: relative;
+    /* Negate mainContent padding */
+    top: -48px;
+    left: -48px;
+}
+
+#image1{
+    /* Set position */
+    position: relative;
+    left: 12px;
 }
 
 #introText{
-    grid-column: 1 / span 2;
+    grid-column: 1;
+    width: 720px;
+    background-color: var(--base);
+}
+
+#mainContent{
+    /* Set background colour */
+    background-color: var(--light);
+    /* Set padding */
+    padding: 48px;
+}
+
+#pageDivisions{
+    /* Set grid */
+    display: grid;
+    grid-template-columns: 75% 25%;
+    /* Set margin */
+    margin: 0;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#sidebar{
+    background-color: var(--base);
+    
+    /* Set padding */
+    padding-top: 40px;
+    /* Set border */
+    border: 3px solid var(--accent1);
+    border-top: 0;
+    border-bottom: 0;
+    /* Set box shadow */
+    box-shadow: 0 0 20px 5px var(--accent1-light), inset 0 0 20px 5px var(--accent1-light);
+    /* Setup content space */
+    text-align: center;
+}
+
+#sidebarBorder{
+    /* Set position */
+    position: absolute;
+    left: 1380px; /* Manual alignment; workaround recommended, but unknown*/
+    top: -20px;
+    height: 110%; /* TEMPORARY! REMOVE WHEN PAGE READY */
+    width: 415px; /* Margin must be 120 outside this box */
+}
+
+#sideDesc1{
+    width: 280px;
+    /* Center div */
+    margin: auto;
+}
+
+#title{
+    /* Set margin */
+    margin-top: 0;
+    /* Set font */
+    font-size: 48px;
 }

@@ -1,4 +1,4 @@
-function set_username(){
+function set_username(destination){
     // Get input from user
     let username = prompt("Please enter a username");
     
@@ -7,7 +7,7 @@ function set_username(){
         // Save username as cookie
         document.cookie = "username=" + username + ";path=/";
         // Change page to starting page
-        location = "./Pages/start.html";
+        location = destination;
     }else{
         // If no username entered end interaction
         alert("Invalid Username!");
@@ -34,12 +34,22 @@ function get_username(){
             return part.substring(name.length, part.length);
         }
     }
-    return "Invalid";
+    return "null";
 }
 
 function fill_username(id){
     // Get username
-    let username = get_username();
+    let username;
+    // Make sure user has username (edge case)
+    while(true){
+        // Get current username value
+        username = get_username();
+        if(username.length < 1 || username == "null"){
+            username = set_username(location);
+        }else{
+            break;
+        }
+    }
     // Get array of elements of class
     const members = document.getElementsByClassName(id);
     // Set all elements of class to username

@@ -134,7 +134,7 @@ It ends with a button to finally start your journey.
 
 The Below image is an example image as a placeholder
 
-![Landing Page](https://github.com/Majesticats/Its-not-Mappening/blob/main/Doccumentation/Images/Land)
+![Landing Page](https://github.com/Majesticats/Its-not-Mappening/blob/Bruce/Doccumentation/Images/Land.png)
 
 ### Story Pages
 
@@ -142,7 +142,7 @@ The story pages are filled with story, lore snippets, pictures and interactables
 
 The Below image is an example image as a placeholder
 
-![Story Page](https://github.com/Majesticats/Its-not-Mappening/blob/main/Doccumentation/Images/Story)
+![Story Page](https://github.com/Majesticats/Its-not-Mappening/blob/Bruce/Doccumentation/Images/Story.png)
 
 
 #### Mini-Games
@@ -157,7 +157,7 @@ Memory, the tile game with duplicate tiles you must remember and match before ti
 
 Tic Tac Toe, the simple 3x3 grid where you play against the computer in circles and crosses to see who can get three in a row first.
 
-![Tic Tac Toe](https://github.com/Majesticats/Its-not-Mappening/blob/main/Doccumentation/Images/Tic)
+![Tic Tac Toe](https://github.com/Majesticats/Its-not-Mappening/blob/Bruce/Doccumentation/Images/Tic.jpg)
 
 Minesweeper, the good old game where you must find the mines and mark them out.
 
@@ -175,6 +175,7 @@ Lore Questions, To move into the future you must remember the past and use it in
 
 ![Lore](https://github.com/Majesticats/Its-not-Mappening/blob/main/Doccumentation/Images/Lore)
 
+All the above images are placeholders and are subject to change
 
 ## 7. Feature prioritization <a name="section7"></a>
 

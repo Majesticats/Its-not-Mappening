@@ -1,0 +1,19 @@
+@media (max-width: 600px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container{
+        width: 300px;
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+ @media (max-width:420px){
+      :root{ --size: calc(20vmin); }
+    }

@@ -81,9 +81,9 @@ Mini-games support pacing changes between reading, exploring, and solving — ad
 ### Preliminary Interface Sketches
 Mock-ups of the main website page and some of the menus are shown below, though these are to be treated as *very* preliminary and will certainly change as we get deeper into the design process.
 
-![alt text](https://github.com/Pulkman/VIU-3D-Map/blob/main/Doccumentation/Images/sketch1jpg)
+![alt text](https://github.com/Pulkman/VIU-3D-Map/blob/main/Doccumentation/Images/roles.jpg)
 
-![alt text](https://github.com/Pulkman/VIU-3D-Map/blob/main/Doccumentation/Images/sketch1.jpg)
+![alt text](https://github.com/Pulkman/VIU-3D-Map/blob/main/Doccumentation/Images/sketch.jpg)
 
 ### Scaling and Stretch Goals (Clarification Additions)
 

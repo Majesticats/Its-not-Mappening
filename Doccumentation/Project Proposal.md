@@ -1,62 +1,97 @@
-﻿# CSCI 265 Initial Project Proposal
 
-## Team name: The Mappening
+### CSCI 265 Initial Project Proposal
 
-## Project/product name: Viu map upgrade
+**Team name:** NOT MAPPENING
 
-## Members and contact email
+**Project/product name:** The Endless Chasm
 
-  -  Alex Thompson, alex.neil.thompson@gmail.com
-  -  Bruce Fernandes, bruce2005.ind@gmail.com *Main contact*
-  -  Gowan  Cathers, gowan.cathers@my.viu.ca
-  -   Md Zahidur Rahman Nabil, zahidurrahmannabil@gmail.com
-  -  Nguyen Du (MAX), nguyentdu.work@gmail.com
-  -  Olaleye Victor, olaleyevictor51@gmail.com
+**Members And Contact Email**
+- Bruce Fernandes, [bruce2005.ind@gmail.com](mailto:bruce2005.ind@gmail.com) _Main contact_
+- Gowan Cathers, [gowan.cathers@my.viu.ca](mailto:gowan.cathers@my.viu.ca)
+- Md Zahidur Rahman Nabil, [zahidurrahmannabil@gmail.com](mailto:zahidurrahmannabil@gmail.com)
+- Nguyen Du (MAX), [nguyentdu.work@gmail.com](mailto:nguyentdu.work@gmail.com)
+- Olaleye Victor, [olaleyevictor51@gmail.com](mailto:olaleyevictor51@gmail.com)
 
-## Project Overview
+---
 
-Finding the designated building and going from one building to another can be pretty challenging for new and first year students. The google maps are not updated for a significant amount of time. Specially we don't see many new structures in the current map and some building don't have their numbers on them.
+### Project Overview
 
-Our project proposes to develop an interactive 2D map of VIU that will allow users to select routes based on acceicbilty and speed. Anyone with a smartphone and internet connection will be able to use the website. The end goal is to create a user friendly 2D navigation system that will improve anyone's experience in VIU. 
+The Endless Chasm is a narrative-driven lore exploration game presented as an interactive website experience. Players traverse a vast supernatural cave world where reality is uncertain, the depth is infinite, and the path is non-linear. 
 
-## Target audience and motivation 
-Our target audience are the students and faculty of VIU. 
-The primary motivation behind making this navigation system is we want to make campus life easier and more accessible.
-We hope to help everyone with their accessibility needs and efficient in their stay on campus.
+Players decide how they navigate wandering endlessly through branching chambers and tunnels. Throughout the journey the user will encounter skill-based mini-games, and interactive lore. There is no final prescribed ending — the experience is designed to let the player shape their own narrative direction.
 
-## Key features and discussion
-Our system will include a 2D interactive map of VIU that will help students and visiors to naviagte inside VIU. Users will be able to search for buildings and facilities and receive direction optimized for accesibility and speed.
+This project focuses on immersion, lore depth, and open-ended discovery, rather than a fixed linear end-state. It is intended to be built using HTML, CSS, and JavaScript without external front-end frameworks, minimizing tool overhead and ensuring development feasibility within the semester.
 
-## Preliminary Sketches 
+---
+
+### Target Audience and Motivation
+
+The Endless Chasm is intended for players who enjoy immersive narrative exploration and world-building, in particular individuals who enjoy fantasy fiction, role-playing environments, and puzzle-solving. Players who are fans of Dungeons & Dragons, Skyrim, text adventures, and choice-driven RPG storytelling formats are likely to find this experience engaging.
+
+Our motivation is to provide an escapist interactive world that offers a break from everyday real-world stress, academic pressure, and structured tasks. It is meant for individuals like us who want to explore a fictional alternate universe at their own pace reading, analyzing, solving, and shaping their own path as they uncover secrets buried within the caves.
+
+---
+
+### Key Features and Discussion
+
+#### Lore System
+
+- Players will see descriptive narrative elements presented with visual images representing:
+    
+    - Locations within the cave world
+        
+    - Characters encountered along routes
+        
+    - Creatures, both hostile and neutral
+        
+- Descriptions will include:
+    
+    - Core story elements and narrative reveals
+        
+    - Flavour text for thematic immersion and mood building
+        
+    - World history, ancient mythology, and contextual world-building
+        
+- Story elements are intended to be discovered progressively and non-linearly, allowing players to construct their own interpretation of the world’s meaning and origins.
+
+#### Non-linear Exploration
+
+- Users choose direction freely, with branching paths and the ability to retrace steps.
+- There is no defined primary objective or required storyline path.
+- Player choice influences their experience, knowledge gained, and how the cave evolves for them.
+#### Tools and World Interaction
+
+*  Certain locations/pages will provide access to tools that support puzzle-solving or progression.
+    
+- Potential tools include: journal, calculator, pickaxe, dynamite, or other interactable objects.
+    
+- Tools may be required to overcome challenges or solve mini-game gates in deeper cave sections.
+#### Mini-Games
+
+All puzzle systems will be implemented by the development team using custom HTML/CSS/JavaScript. A range of selectable mini-games are used for progression and challenge elements:
+- Sudoku 
+- Tic-tac-toe
+- Riddles and problem-solving prompts
+- Lore-based quiz questions to verify retained knowledge
+
+Mini-games support pacing changes between reading, exploring, and solving — adding skill-based interactivity that complements narrative immersion.
+
+---
+
+### Preliminary Interface Sketches
+Mock-ups of the main website page and some of the menus are shown below, though these are to be treated as *very* preliminary and will certainly change as we get deeper into the design process.
+
+![alt text](https://github.com/Pulkman/VIU-3D-Map/blob/main/Doccumentation/Images/sketch1jpg)
+
 ![alt text](https://github.com/Pulkman/VIU-3D-Map/blob/main/Doccumentation/Images/sketch1.jpg)
-![alt text](https://github.com/Pulkman/VIU-3D-Map/blob/main/Doccumentation/Images/Sketch2.jpg)
 
-As shown above in the pictures, the map will have similar grid patterns and nodes that connect to form the path.
+### Scaling and Stretch Goals (Clarification Additions)
 
-## Scaling options
-Initially, the project will be limited to the VIU campus, but the design will support scaling to other universities or institutions. By keeping the architecture modular, additional campuses can be added without reworking the entire system. Future scaling may include 3D map, indoor navigation for buildings, and the ability to handle real-time updates such as clousers for construction. 
+- Collectible pages of lore are considered a **stretch goal**, where players may optionally collect discoverable fragments of ancient history, recorded notes, or hidden world documentation as optional long-form progression rewards.
+    
+- These collectibles would be beyond the minimum viable scope and only implemented if core systems are completed and remaining development time permits.
+### Risks, Limitations, and Concerns
 
-### Core aspects
-- Interactive 2d campus map with search and navigation
-- Route planning based on accesibility and speed
-- Support for mobile and desktop browsers
-- Simple and user friendly interface
+Due to the conceptual scale of a world with potentially infinite expansion, there is significant risk related to scope management. The concept can expand endlessly, making it challenging to define a limit. Ensuring deliverables remain realistic while not sacrificing creative direction is a balancing challenge.
 
-### Secondary features
-- Points of interest (cafeteria, library, washrooms, parking)
-- Ability to bookmark frequently visited locations
-- Feedback system for reporting errors or suggesting improvements
-- Events marking(avoiding or attending events on campus)
-
-### Stretch goals
-- making the map 3D.
-- Navigation inside buildings. 
-- Making cool designs and allowing for dark mode and light mode customization.
-- Login system to save and protect your course schedule and other information(for now it will be no login and if you refresh the page you will have to put your schedule in again)
-
-  
-## Risks and potential issues
-- The geolocation of the user to allow us to direct them properly
-- Putting together the Map and the schedule system together
-- The massive possibilities with accessibility which have to be mapped by actually travelling through campus
-- Having the system work with both desktop and mobile usage, possibility making it work as an app
+Additionally, the conceptual shift from the earlier VIU campus map idea to this fantasy exploration concept introduces potential redesign overhead. The team will need to commit to strong scope control and focus on core feature implementation, while leaving extension content for post-semester or stretch goal phases.

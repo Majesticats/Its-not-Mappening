@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sudoku — CSCI 265</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Sudoku</h1>
+    <div id="board" class="board" role="grid" aria-label="Sudoku board"></div>
+    <div class="panel">
+      <button id="btn-check">Check</button>
+      <button id="btn-reset">Reset</button>
+    </div>
+    <div id="status" class="status" aria-live="polite"></div>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

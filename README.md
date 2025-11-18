@@ -18,7 +18,7 @@ Our Project making a Lore Website with fun minigames
     - the main branch contains the main stable version of the project.
     - the named branches are meant for each member to make their additions seperatly before adding them to the main branch.
 
-![image not found](Doccumentation/pics/Version.png)
+![image not found](Doccumentation/images/Version.png)
 
 ## Instructions for working within the repo separated by task
 

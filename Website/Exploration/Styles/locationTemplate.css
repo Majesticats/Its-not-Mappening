@@ -1,0 +1,125 @@
+/* Note that each section is organized alphabetically, not by scope */
+
+/* Metadata */
+/* Color Palette Definition */
+:root{
+    --base: #081020;
+    --dark: #040810;
+    --light: #182030;
+    --accent1: #084;
+    --accent1-dark: #063;
+    --accent1-light: #0a5;
+    --accent2: #048;
+    --accent2-dark: #036;
+    --accent2-light: #05a;
+    --text: #e0fff0;
+}
+
+/* Tag Selectors */
+body{
+    /* Set margin */
+    margin: 0;
+}
+
+h2{
+    position: relative;
+    top: 24px;
+}
+
+html{
+    /* Set font standard */
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Set page background */
+    background-color: var(--dark);
+    /* Set text colour */
+    color: var(--text);
+}
+
+/* Class Selectors */
+.flexbox{
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.textContent{
+    padding: 24px;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px var(--accent2-dark), inset 0 0 10px 5px var(--accent2-dark);
+}
+
+/* ID Selectors */
+#banner{
+    /* Set position */
+    position: relative;
+    /* Negate mainContent padding */
+    top: -48px;
+    left: -48px;
+}
+
+#image1{
+    /* Set position */
+    position: relative;
+    left: 12px;
+}
+
+#introText{
+    grid-column: 1;
+    width: 720px;
+    background-color: var(--base);
+}
+
+#mainContent{
+    /* Set background colour */
+    background-color: var(--light);
+    /* Set padding */
+    padding: 48px;
+}
+
+#pageDivisions{
+    /* Set grid */
+    display: grid;
+    grid-template-columns: 75% 25%;
+    /* Set margin */
+    margin: 0;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#sidebar{
+    background-color: var(--base);
+    
+    /* Set padding */
+    padding-top: 40px;
+    /* Set border */
+    border: 3px solid var(--accent1);
+    border-top: 0;
+    border-bottom: 0;
+    /* Set box shadow */
+    box-shadow: 0 0 20px 5px var(--accent1-light), inset 0 0 20px 5px var(--accent1-light);
+    /* Setup content space */
+    text-align: center;
+}
+
+#sidebarBorder{
+    /* Set position */
+    position: absolute;
+    left: 1380px; /* Manual alignment; workaround recommended, but unknown*/
+    top: -20px;
+    height: 110%; /* TEMPORARY! REMOVE WHEN PAGE READY */
+    width: 415px; /* Margin must be 120 outside this box */
+}
+
+#sideDesc1{
+    width: 280px;
+    /* Center div */
+    margin: auto;
+}
+
+#title{
+    /* Set margin */
+    margin-top: 0;
+    /* Set font */
+    font-size: 48px;
+}

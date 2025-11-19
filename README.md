@@ -1,32 +1,97 @@
-### @ Dave Wessels
+@ Dave Wessels
 The main branch of the repo is always the most up-to-date branch. Please refer to this branch when grading our group project. All Markdown files for the different phases can be found in the "Documentation" folder.
 
-# CSCI265
-Project for CSCI 265 with Bruce, Gowan, Max, Nabil and Victor
+# The Endless Chasm
+Interactive Lore-Driven Exploration Website • CSCI 265 – Software Engineering Project
 
-- Bruce is our Documentation lead, 
-- Gowan is our design lead and Version control lead, 
-- Max is our , 
-- Nabil is our Lore and story Lead, 
-- Victor is our programming lead
+## 🕳️ Overview
+The Endless Chasm is a narrative-driven exploration experience presented as an interactive website. Players travel through themed chambers within a cave system, uncovering lore, solving puzzles, and progressing based on their own choices.
 
-Our Project making a Lore Website with fun minigames
+The focus is on:
+- immersive worldbuilding
+- lore exploration supported by visual & descriptive storytelling
+- puzzle-based, problem-solving interactions
 
-## Branch Strategy and Version Control
+Developed using HTML, CSS, and JavaScript — without external front-end frameworks.
 
-- There are several branches that exist.
-    - the main branch contains the main stable version of the project.
-    - the named branches are meant for each member to make their additions seperatly before adding them to the main branch.
+## 🎮 Core Features
 
-![image not found](Doccumentation/Images/Version.png)
+### 🧭 Non-Linear Exploration
+- Players choose between different branching paths leading to unique chambers
+- Each chamber presents distinct visuals, lore, and interactive challenges
+- No single “correct” path — exploration is flexible and open-ended  
+
+### 📘 Lore Discovery
+- Environmental storytelling through descriptive text
+- High emphasis on visual assets to support immersion
+
+### 🧩 Puzzle & Mini-challenges
+Each puzzle provides optional progression depending on the chamber:
+
+- Tic-Tac-Toe  
+- Memory Card Game  
+- Sudoku  
+
+Puzzles may:
+- unlock new routes  
+- reveal new lore   
+- provide clues  
+
+### 🛠 Tools 
+- Journal writing
+
+## 🗺️ World Structure
+- The cave system is divided into **chambers**, each represented by an HTML page or component.  
+- Players move using **clickable images** that represent available paths.  
+- Chamber → Lore → Optional Puzzle → Path Choice → Next Chamber.
+
+## 📂 Repository Structure
+```
+Its-not-Mappening/
+│
+├── Code/
+│   ├── index.html
+│   ├── tic_tac_toe/
+│       └── ...
+│   ├── memory_match/
+│       └── ...
+│   ├── sudoku/
+│       └── ...
+│   └── journal/
+│       └── ...
+│   └── Website/
+│       └── ...
+│
+├── Documentation/
+│   ├── Charter.md
+│   ├── Proposal.md
+│   ├── Requirements/
+│       └── Requirements.md
+│   ├── DocsAssets/
+│       └── ...(img)
+│   ├── Design/
+│       └── Design.md
+│   ├── Standards/
+│       └── Standards.md
+│   └── Updates/
+│
+├── Assets/
+│   ├── Mockups/
+│   └── Release/
+│
+├── Testing/
+│
+├── README.md
+└── index.html
+```
 
 ## Instructions for working within the repo separated by task
 
-### Setup
+### 🔧 Development Setup
 Clone the repo and enter  the new directory to start working.
-```
-### Example Commandline Inputs/Steps ###
 
+**Example Commandline Inputs/Steps** 
+```
 git clone https://github.com/Majesticats/Its-not-Mappening --branch [developer name]
 cd Its-not-Mappening  
 ```
@@ -36,9 +101,9 @@ To merge a finished local branch with the main branch, send a message in the tea
 Fix any merge conflicts if necessary and commit the fixes.
 
 Push your merged branch to the remote repo. Then go to GitHub and make a merge request to merge your feature branch with the main branch. The Repo manager will check the request and approve it if everything is correct.
-```
-### Example Commandline Inputs/Steps ###
 
+**Example Commandline Inputs/Steps**
+```
 git pull origin main
 git checkout featurename
 git status
@@ -56,41 +121,25 @@ git commit -m "message"
 git pull origin main
 ```
 
-### Start Testing
-To start testing, pull the latest version of the main branch. Go to your local main branch and create a testing branch. Then push the testing branch to the remote repo.
-```
-### Example Commandline Inputs/Steps ###
+## 🧪 Testing
+Testing uses:
+- `TesterII.sh`  
+- `TestCollection.sh`
 
-git pull origin main
-git checkout main
-git branch testname
-git checkout testname
-git push origin testname:testname
-```
-### Testing update
-To make an update to the testing branch, go to your local testing branch and fix any bugs. Then commit the changes to the branch. Push the local branch to the remote repo.
-```
-### Example Commandline Inputs/Steps ###
+Covers:
+- navigation  
+- puzzle behavior  
+- tool gating  
+- lore triggering  
 
-git checkout testname
-~fix bugs
-git status
-git add .
-git commit -m "message"
-git push origin testname:testname
-```
-### Testing done
-If testing is complete, send a Discord message that you are about to update to the next stable version. Then pull the latest version of the main branch. Go to your testing branch and merge the main branch into your testing branch. Push your updated testing branch to the remote repo. Then go to GitHub and make merge requests to merge the testing branch into the main branch. The Repo manager will check the requests and approve them if everything is correct.
-```
-### Example Commandline Inputs/Steps ###
+Full Test Plan is in `Documentation/TestPlan/`.
 
-git pull origin main
-git checkout testname
-git status
-git merge main
-git push origin testname:testname
-~go to GitHub
-~make pull request to merge test with main
-~merges approved
-~close branch
-```
+## 👥 Team Members
+- Bruce Fernandes 
+- Gowan Cathers  
+- Md Zahidur Rahman Nabil  
+- Nguyen Du (MAX)  
+- Olaleye Victor  
+
+## 📄 License
+This project is part of **CSCI 265 – Software Engineering** at Vancouver Island University.

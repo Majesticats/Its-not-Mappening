@@ -3,14 +3,18 @@ function set_username(destination){
     let username = prompt("Please enter a username");
     
     // Check if valid username
-    if(username != null && username.length > 0){
+    if(username != null && username.trim().length > 0){
+        username = username.trim();
         // Save username as cookie
         document.cookie = "username=" + username + ";path=/";
         // Change page to starting page
         location = destination;
+        // Return the username so calling functions can use it
+        return username;
     }else{
         // If no username entered end interaction
         alert("Invalid Username!");
+        return null;  // IMPORTANT so the loop knows it's invalid
     }
 }
 
@@ -23,12 +27,8 @@ function get_username(){
     for(let i = 0; i < parts.length; i++){
         let name = "username=";
         // Copy part
-        let part = parts[i];
-        // // Find start of variable
-        // while(part.charAt(0) == ' '){
-        //     part = part.substring(1);
-        // }
-        // Check if username
+        let part = parts[i].trim();
+        // Check if username cookie exists
         if(part.indexOf(name) == 0){
             // Return value of username
             return part.substring(name.length, part.length);
@@ -40,16 +40,24 @@ function get_username(){
 function fill_username(id){
     // Get username
     let username;
+
     // Make sure user has username (edge case)
     while(true){
         // Get current username value
         username = get_username();
-        if(username.length < 1 || username == "null"){
+        if(username === "null" || username.length < 1){
+            // Ask user to create username
             username = set_username(location);
+
+            // If user cancels prompt or gives invalid input → loop again
+            if(!username){
+                continue;
+            }
         }else{
             break;
         }
     }
+
     // Get array of elements of class
     const members = document.getElementsByClassName(id);
     // Set all elements of class to username

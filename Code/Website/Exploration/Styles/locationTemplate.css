@@ -16,6 +16,36 @@
 }
 
 /* Tag Selectors */
+a{
+    /* Set Position */
+    position: relative;
+    /* Set Colours */
+    color: var(--text);
+    background-color: var(--base);
+    border-color: var(--accent1-dark);
+    /* Set Font */
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    /* Set Padding */
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* Set Border Radius */
+    border: 2px solid;
+    border-radius: 10px;
+    /* Set Margin */
+    margin: auto;
+    /* margin-top: 16px; */
+    /* margin-bottom: 64px; */
+}
+
+a:hover{
+    border-color: white;
+    border-style: solid;
+    box-shadow: 0 0 5px 2px var(--accent1-light), inset 0 0 5px 2px var(--accent1-light);
+}
+
 body{
     /* Set margin */
     margin: 0;

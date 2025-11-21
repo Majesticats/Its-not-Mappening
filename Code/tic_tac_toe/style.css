@@ -36,7 +36,7 @@
       display:grid;
       aspect-ratio: 1;
       width: 60.25%;
-      background-image: url("../ImageAssets/TicTacToeBoard.png");
+      background-image: url("../../Assets/Release/Tic_tac_toe/TicTacToeBoard.png");
       background-size: contain;
       grid-template-columns:repeat(3, var(--size));
       grid-template-rows:repeat(3, var(--size));

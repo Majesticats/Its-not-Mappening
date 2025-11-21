@@ -1,104 +1,199 @@
-# CSCI 265 Project Design document
+# CSCI 265 Project Design Document
 
 ## Team name: It's Not Mappening
 
-## Project/product name: Cave Diving
+## Project/product name: The endless Chasm
 
-## Contact person and email
+## Main Contact person and email
 Bruce Fernandes, bruce2005.ind@gmail.com 
 
+--- 
+
 ## Table of contents
-1. Design Overview
-2. Logical Design
-3. Transition to Implementation
-4. Glossary
-5. Appendix
+1. System Architecture Design
+    - 1.1 Location Page System
+    - 1.2 Puzzle System
+    - 1.3 Navigation System
+    - 1.4 Shared UI layout
 
-##  Design overview
-Cave Diving is a 2D browser based game filled with many adventures. Players will be exploring cave enviorments, solve riddles and complete puzzles to unlock upper levels. Our main focus is education through exploration. Players will learn several concepts of math and others by interacting with in-game challenges.  
-System Context
+--- 
 
-Core Concept:
-The cave world acts as a hub, with various “chambers” where players can:
-1. Play puzzle mini-games (Sudoku, Snake, Minesweeper, etc.)
-2. Solve riddles or lore-based questions to progress
-3.  Defeat the Big Bad Boss, a math-based challenge at the end
+## 1. System Architecture Design
+The Endless Chasm is implemented as a modular, page-based 2D browser exploration system. Each major component is responsible for one part of the game experience.   
 
-Users: General players and students 
-External systems: Browser runtime (HTML/CSS/JS), local storage for progress, optional quiz API (future).
+Together, these components form the structural foundation of navigation, lore delivery, and puzzles experience.
 
-Learning Goal: Engage players through problem-solving and critical thinking while maintaining a fun, interactive design.
+Below is a breakdown of each component included in the current architecture.
 
-Context Diagram (Top Level DFD):
-Player
-↓↑
-Browser Game Interface
-↓↑
-Game Logic Engine → Quiz/Riddle Data
-↓↑
-Progress Save System (localStorage)
+--- 
 
-## The logical design
-System Decomposition:
-The system follows a layered, modular web-based design:
+### **1.1 Location Page System**
 
-Root Directory Structure:
-root/
-root/styles/ = CSS files used globally across pages
-root/scripts/ = JavaScript files controlling logic, animation, and interactivity
-roots/pages/
-roots/pages/markup/ = HTML pages (main hub, mini-games, tools)
-roots/pages/styles/ = Page-specific CSS files
+Each area or location in the cave world is distinct and represented as a separate HTML page. These pages form the primary content of the website and contain:
 
-Subsystems:
-1. Main Hub = Central cave environment where players choose which chamber/game to enter
-2. Mini-Games = Each chamber houses one puzzle or challenge.	
-3. Riddle & Quiz System	= Handles multiple-choice and lore-based questions.	
-4. Boss Battle	= Final math-based challenge with score tracking.	
-5. Tools Suite	= Optional utility section for players: text editor, journal, calculator.	
-6. Data & Progress = Local storage system to track completed levels and unlocked chambers.
-   
-Interactions:
-Player ↔ UI Renderer: Inputs (keyboard/mouse), outputs (display updates).
-UI Renderer ↔ Game Engine: Scene updates, event handling.
-Game Engine ↔ Quiz Manager: Trigger riddles or quiz pop-ups when reaching checkpoints.
-Quiz Manager ↔ Progress Tracker: Saves results and unlocks new levels.
+- **Main textboxes** displaying lore and environmental descriptions.
+- **A character dialogue sidebar** for character dialogue
+- **Optional interactive items** which update player state
+- **Navigation links** leading to other locations or puzzle modules  
 
-## Transition from the logical design to an implementation
-Languages: HTML 5, CSS 3, JavaScript (ES6)
-Tools: 
-Repository Structure: root/styles, root/scripts, root/pages/markup, root/pages/styles
-Interfaces: 
+This system forms the core of the website’s world structure.
 
-Example File List:	
-/scripts/game.js = main loop and rendering	
-/scripts/quiz.js = quiz logic	
-/scripts/save.js = progress storage	
-/pages/markup/index.html = home screen	
-/pages/markup/game.html = main game	
-/styles/global.css = shared UI styling	
-/pages/styles/game.css = level-specific styling
+--- 
 
-## A glossary: This is optional but often nice to have: if a term is specific to the product or is unlikely to be known by the average reader (e.g. a random second year CS student) then include an entry for it
-1. Chamber = A specific mini-game or challenge room in the cave
-2. Lore = Background story revealed through riddles or journals
-3. Tool Suite = Helper programs (editor, journal, calculator) used in-game
-4. Big Bad Boss = Final level where players solve math problems to win
-5. Save State = Local data containing progress and unlocked areas
-## Appendices
-Appendix A – Folder Structure Diagram
-Root connects to styles, scripts, and pages (which further splits into markup and styles).
+### **1.2 Puzzle System**
 
-Appendix B – Mini-Game Descriptions
-1. Sudoku = Logic puzzle; fill grid with numbers 1–9.
-2. Minesweeper = click tiles, avoid hidden traps.
-3. Snake	= Classic arcade game controlled by arrow keys.
-4. Riddles = Text-based puzzles with answer input.
-5. Multiple Choice = Quizzes testing memory of lore or math.
-6. Lore Questions = Recall questions from earlier discoveries.
-7. Big Bad Boss = Math battle—solve equations before time runs out.
-   
-Appendix C – Tool Descriptions
-1. Text Editor = Write notes or decode clues.
-2. Journal = Stores lore pieces or player notes.
-3. Calculator = Helps with math puzzles and the boss fight.
+Puzzles are implemented as fully independent modules, each containing its own HTML, CSS, and JavaScript logic implementation. 
+Location pages link to puzzle modules when appropriate through navigation system.
+
+Puzzle modules:
+
+- run separately in its own page
+- return success/failure outcomes
+- support modular development (each teammate builds their own puzzle)
+
+This modular design ensures puzzles do not interfere with narrative structure and remain easy to maintain.
+
+--- 
+
+### **1.3 Navigation System**
+
+Navigation is handled through clickable elements that move the user between location pages. The navigation system supports:
+- branching paths
+- puzzles access
+Navigation logic is implemented in shared JavaScript components.
+
+### **1.4 Shared UI Layout**
+
+A consistent user interface is shared across all pages.
+
+The shared layout includes:
+
+- **Global CSS styling** for typography, visual layout, and html structure  
+- **A universal header or sidebar** that may display tools
+- **Navigation controls** consistent on all pages  
+
+Sharing the UI layout ensures visual consistency, reusability, and maintainability.
+
+## Section 2: Site Map Design
+
+## 2. Site Map Design
+
+The site map defines the structural layout of all included pages within the project **The Endless Chasm** and illustrates the navigating behaviors of players in the cave system. The website uses a non-linear exploration model: each location page possibly branches into multiple possible paths.
+
+---
+
+## 2.1 Page categories
+
+The project includes the following major page types:
+
+- **Location Pages:** 
+    CCore exploration pages representing each distinct area in the cave. 
+    Each contains descriptive lore text, images, navigation links, and character dialogue.
+
+- **Puzzle Pages:** 
+    Fully independent modules accessed from specific locations.
+    These include independent HTML/CSS/JS implementations.
+
+- **Shared Pages:** 
+    Includes global or non-location pages such as the home page, UI elements or any general information page.
+
+---
+
+## 2.2 Site Map Overview (Abstract Layout)
+
+```
+Home Page
+   ↓
+Entrance Chamber
+   ├── Narrow Passage
+   │       └── Crystal Hall
+   │               └── Puzzle: Sudoku → Unlock Page
+   └── Water Cavern
+           └── Dark Sanctum
+                   └── Puzzle: Memory → Unlock Page
+```
+
+This structure represents the conceptual navigation model.  
+Actual area names may change as the narrative is finalized.
+
+## 3. Navigation Flow Design
+
+The navigation flow describes how player behaviors including: moving between pages, interacting with puzzles, and accessing additional lore. The flow applies consistently to all location pages within **The Endless Chasm**.
+
+Navigation is currently implemented using stylized `<a>` tags that visually resemble buttons. These links direct the player to different areas, puzzle modules, or shared pages.
+
+---
+
+### 3.1 Navigation Steps (High-Level Flow)
+
+1. **Enter Location Page**
+   - The player arrives at a location page containing:
+     - descriptive lore text
+     - character dialogue sidebar
+     - navigation links styled as buttons
+     - optional puzzle link
+
+2. **Read and Interpret Lore**
+   - The Textboxes provide environmental descriptions.
+   - The sidebar offers one-way character dialogue for context or hints.
+
+3. **Optional Puzzle Interaction**
+   - Some pages include a link to a puzzle module (e.g., Sudoku, Memory Match).
+
+4. **Puzzle Outcome**
+   - **Success:** unlocks a small piece of lore (e.g., "paper strip" content).
+   - **Failure:** player may retry or simply return to exploration.
+
+5. **Return to Location Page**
+   - After the puzzle, players return to the originating location page.
+
+6. **Choose Next Path**
+   - The player selects one of the available stylized navigation links and moves to another location and repeat the process.
+
+---
+
+### 3.2 Navigation Flow Diagram (Abstract)
+
+```
+           +---------------------------+
+           |      Enter Location       |
+           +-------------+-------------+
+                         |
+                         v
+           +---------------------------+
+           |   Read Lore + Dialogue    |
+           +-------------+-------------+
+                         |
+         +---------------+---------------+
+         |                               |
+         v                               v
++-------------------+         +-------------------------+
+|   No Puzzle Here  |         |   Optional Puzzle Link  |
+| (Continue Exploring)        +-----------+-------------+
++-----------+-------+                     |
+            |                             |
+            v                             v
+ +----------------------+       +------------------------+
+ | Select Navigation     |       |   Solve Puzzle Page   |
+ | (Stylized <a> tag)    |       +-----------+------------+
+ +-----------+-----------+                   |
+             |                               |
+             v                         +-----+-------+
+   +----------------------+            | Success      |
+   |   Go To Next Page    |            | → Unlock lore|
+   +----------------------+            +-----+--------+
+                                              |
+                                              v
+                                    +--------------------+
+                                    | Return to Location |
+                                    +--------------------+
+```
+
+---
+
+### 3.3 Current Navigation Implementation
+
+- Navigation is handled using **stylized anchor tags** (`<a>`), not images or scripts.
+- Puzzles **do not unlock new areas**, only **lore fragments**.
+- Some areas may have **multiple branching paths**, others may be linear.
+- Shared UI is partially consistent due to a global CSS palette, but HTML structure varies between pages.

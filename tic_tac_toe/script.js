@@ -66,7 +66,12 @@
     
     function renderCell(i){
       const el = boardEl.children[i]; // get the cell element
-      el.textContent = board[i] || ''; // set text to X or O
+      // el.textContent = board[i] || ''; // set text to X or O
+      if(board[i] == 'X'){ // If cell = X, insert image of X tile
+        el.innerHTML = "<img src='../ImageAssets/X-Tile-Small.png' alt='X' width='80' height='80'>"
+      }else if(board[i] == 'O'){ // If cell = O, insert image of O tile
+        el.innerHTML = "<img src='../ImageAssets/O-Tile-Small.png' alt='O' width='80' height='80'>"
+      }
       if(board[i]) el.classList.add('disabled'); // diable if occupied with X or O
       else el.classList.remove('disabled'); // enable if empty
     }

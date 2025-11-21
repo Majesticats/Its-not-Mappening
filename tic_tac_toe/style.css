@@ -2,7 +2,8 @@
       --size: min(14vmin, 80px);
       --primary: #0b6efd;
       --bg: #e5c57c;
-      --tile-bg: #ffffff;
+      --tile-bg: rgba(0,0,0,.1);
+      /* --tile-bg: #fff; */
       --win-bg: #d4f7d4;
     }
     html,body{
@@ -15,7 +16,11 @@
       justify-content:center;
     }
     .container{
-      width:min(420px, 95vw);
+      min-width: 420px;
+      max-width: 95vw;
+      aspect-ratio: 1;
+      /* width:min(420px, 95vw); */
+
       background:var(--bg);
       border-radius:12px;
       padding:18px;
@@ -25,11 +30,15 @@
     h1{ margin:0 0 8px; font-size:1.1rem; color:#073763; }
     .board{
       display:grid;
+      aspect-ratio: 1;
+      width: 60%;
+      background-image: url("../ImageAssets/TicTacToeBoard.png");
+      background-size: contain;
       grid-template-columns:repeat(3, var(--size));
       grid-template-rows:repeat(3, var(--size));
       gap:7px;
       justify-content:center;
-      margin:18px 0;
+      margin: auto;
     }
     .cell{
       background:var(--tile-bg);

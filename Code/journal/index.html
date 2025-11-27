@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caveman Journal</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=IM+Fell+English+SC&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="journal">
+            <div class="book" role="img" aria-label="Open blank journal with two pages">
+                <div class="page-left">
+                    <form>
+                        <fieldset>
+                            <legend>New comment entry</legend>
+
+                            <p>
+                                <label for="username" class="visually-hidden">Name</label>
+                                <input type="text" id="username" name="username" placeholder="my name is" />
+                            </p>
+
+                            <p>
+                                <label for="comment" class="visually-hidden">Entry</label>
+                                <textarea id="comment" name="comment" rows="10" cols="45" required maxlength="500"
+                                    placeholder="write your note..."></textarea>
+                            </p>
+
+                            <p>
+                                <button>Comment</button>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="page-right" tabindex="0" aria-label="Archive">
+                    <div class="archive-controls">
+                        <input type="text" id="searchInput" placeholder="Search entries..." />
+                        <select id="sortSelect">
+                            <option value="newest">Newest first</option>
+                            <option value="oldest">Oldest first</option>
+                        </select>
+                        <button id="clearFilters" title="Reset filters">✕</button>
+
+                    </div>
+
+                    <nav class="nav-archive" aria-label="Journal archive">
+                        <ul></ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/components/script.js"></script>
+</body>
+
+</html>

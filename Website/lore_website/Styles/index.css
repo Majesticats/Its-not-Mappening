@@ -342,7 +342,7 @@ body {
   }
 }
 
-/* Added modal styles for username entry */
+/* username entry */
 .modal-overlay {
   position: fixed;
   top: 0;

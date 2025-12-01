@@ -29,6 +29,7 @@ Driders
 Half-human, half-spider creatures that dominate the Craglands. Their glowing webs stretch across tunnels, cliffs, and cavern ceilings, creating traps and barriers. Driders move silently, strike quickly, and use their webs to detect vibrations from far away.
 
 #Helicon
+
 ##Overview: 
 Helicon is the deepest and darkest cave system in the mountain, a labyrinth where natural light cannot reach. The air is cold and still, and the only illumination comes from ancient glowing minerals used to fuel the mystery torch. Narrow tunnels branch into puzzle-filled chambers marked with strange symbols left by long-lost Sherpa guides. The deeper a player travels, the more they feel the presence of something watching from the shadows. Helicon ends in the Throne of Bones, home to the corrupted Skeleton King, whose dark magic animates the endless skeleton army guarding the final passage.
 

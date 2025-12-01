@@ -1,4 +1,5 @@
 #Imber
+
 ##Overview: 
 Imber part will have a rainy environment. The humidity will be too high. Players must be very careful while navigating as paths are slippery. Imber will have two locations. The Sunken Village and the Thunder Path: 
 The Sunken Village: A forgotten settlement built on a wide shelf inside the rain cave. The 15–20 homes are carved directly into the cave walls. Most are deserted, still dripping with moisture. Wooden bridges hang over bottomless pits where rainwater gathers.
@@ -14,11 +15,13 @@ Shadow Bats / Minions
 Bat-like creatures made of fog and dark moisture, emerging from cracks when the thunder echoes.
 
 #The Craiglands
+
 ##Overview
 The Craglands are a massive underground cavern filled with jagged rock formations that rise like stone forests. The ground is uneven, sharp, and dangerous, with echoing chambers that distort sound and make navigation confusing. Water drips constantly from unseen cracks, forming slippery pathways and hidden pits. The area is dominated by Driders and other cave-dwelling creatures that have adapted to the harsh, rocky terrain. The main points of interest are The Webcove, a crater wrapped in glowing webs, and Slicksyr, a smooth hill made treacherous by nonstop dripping water. The Craglands feel alive, hostile, and unpredictable and a place where shadows move before you do.
 
 ##Lore
 The Craglands lie in the mid-depth of the mountain’s cave system, a sprawling network of jagged stone pillars and fractured tunnels that resemble a broken kingdom carved by nature. Long ago, this region served as a refuge for exiles who fled deeper underground to escape surface conflicts. These outcasts created hidden shelters and carved settlements into the sharp stone walls, the largest of which became known as “The Burro”, a cramped but thriving underground commune. Over generations, the Craglands changed. Strange mineral energy seeped from deep fractures in the earth, warping the environment and the creatures living within it. Ordinary cave spiders grew monstrous, eventually transforming into Driders which is half-human, half-spider beings feared by all who wander the tunnels. Their luminous webs spread through the caverns like veins, marking territories that even seasoned explorers avoid. When the exiled settlers began vanishing, the remaining communities collapsed, leaving behind only abandoned tools and faint carvings that hint at their final days. Today, the Craglands are ruled by Driders and stalked by Idwer, small goblin-like climbers who navigate the vertical terrain with ease. Every echo in the Craglands feels like a warning, and every shadow suggests that something is watching from just beyond the torchlight.
+
 ##Creatures:
 Idwer
 Small, goblin-like cave dwellers are known for their agility and intelligence. They cling to walls and ceilings with ease, often observing travelers from above. Although not openly hostile, they can become dangerous when threatened or when Driders are nearby.

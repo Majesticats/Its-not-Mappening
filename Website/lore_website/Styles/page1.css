@@ -441,7 +441,7 @@ header.hero::after {
 }
 
 .game-status.winner {
-  color: var(--accent1-light);
+  color: whitesmoke;
   text-shadow: 0 0 10px var(--accent1);
   animation: glow 1s ease-in-out infinite alternate;
 }

@@ -180,11 +180,16 @@ header.hero::after {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.image-title {
+  text-align: center;
+}
+
 .image-slot {
   background: linear-gradient(135deg, var(--dark) 0%, var(--base) 100%);
   border: 2px solid var(--accent2);
   border-radius: 8px;
-  height: 240px;
+  padding: 0;
+  height: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,6 +320,7 @@ header.hero::after {
   border: 2px solid var(--accent1-light);
   border-radius: 6px;
   font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
   text-decoration: none;
   font-family: "Courier New", monospace;

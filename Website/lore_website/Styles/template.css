@@ -327,6 +327,7 @@ header.hero::after {
   letter-spacing: 0.1em;
   transition: all 0.3s ease;
   position: relative;
+  /* right: 6.4%; */
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 136, 68, 0.2);
 }
@@ -378,6 +379,11 @@ header.hero::after {
 /* Add hover effect for navigation buttons */
 .bottom-nav .btn:hover {
   color: #ffffff; /* Bright white text */
+}
+
+.journalBtn {
+  position: absolute;
+  left: 10%;
 }
 
 /* ========================================

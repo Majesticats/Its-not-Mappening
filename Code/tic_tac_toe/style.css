@@ -1,0 +1,93 @@
+    :root{
+      --size: min(14vmin, 80px);
+      --primary: #7bcefd;
+      --secondary: #1df;
+      /* --bg: #e5c57c; */
+      --bg: #123;
+      --tile-bg: rgba(0,0,0,.1);
+      /* --tile-bg: #fff; */
+      --win-bg: #d4f7d4;
+      /* --body-bg: #f0c057; */
+      --body-bg: #012;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: Inter, system-ui, Arial, sans-serif;
+      background: var(--body-bg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .container{
+      min-width: 420px;
+      max-width: 95vw;
+      aspect-ratio: 1;
+      /* width:min(420px, 95vw); */
+
+      background:var(--bg);
+      border-radius:12px;
+      padding:18px;
+      box-shadow: 0 6px 20px rgba(10,30,60,0.08);
+      text-align:center;
+    }
+    h1{ margin:0 0 8px; font-size:1.1rem; color:var(--secondary); }
+    .board{
+      display:grid;
+      aspect-ratio: 1;
+      width: 60.25%;
+      background-image: url("../../Assets/Release/Tic_tac_toe/TicTacToeBoard.png");
+      background-size: contain;
+      grid-template-columns:repeat(3, var(--size));
+      grid-template-rows:repeat(3, var(--size));
+      gap:7px;
+      justify-content:center;
+      margin: auto;
+    }
+    .cell{
+      background:var(--tile-bg);
+      border-radius:8px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:calc(var(--size) * 0.55);
+      font-weight:700;
+      cursor:pointer;
+      user-select:none;
+      box-shadow: 0 2px 6px rgba(10,30,60,0.06);
+      transition: transform .08s ease, background .12s ease;
+    }
+    .cell:active{ transform:scale(.98); }
+    .cell.disabled{ cursor:not-allowed; opacity:.85; }
+    .status{
+      margin-top:6px;
+      font-size:.95rem;
+      color:var(--secondary);
+    }
+    .controls{
+      display:flex;
+      gap:8px;
+      justify-content:center;
+      margin-top:12px;
+    }
+    button.btn{
+      padding:8px 12px;
+      border-radius:8px;
+      border:0;
+      background:var(--primary);
+      color:var(--bg);
+      font-weight:600;
+      cursor:pointer;
+      box-shadow: 0 6px 14px rgba(11,110,253,0.12);
+    }
+    button.btn.secondary{
+      background:transparent;
+      color:var(--primary);
+      box-shadow:none;
+      border:1px solid var(--primary) /*rgba(11,110,253,0.12)*/;
+    }
+    .cell.win {
+      background: var(--win-bg);
+      color: #0a6a0a;
+    }
+   

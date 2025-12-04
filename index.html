@@ -3,42 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Website/Exploration/Styles/index.css">
-    <script src="./Website/Exploration/Scripts/username.js"></script>
+    <link rel="stylesheet" href="./Website/lore_website/Styles/index.css">
     <title>The Endless Chasm</title>
 </head>
 <body>
-    <div></div> <!-- Padding Div -->
-    <div> <!-- Content Div -->
-        <div class="contentSection"> <!-- Title/Intro Sub-section -->
-            <h1 id="title">Welcome to<br>The Endless Chasm</h1>
-            <p>From hot to cold, wet to dry, safe to deadly. The Endless Chasm is host to a wide variety of environments for you to explore</p>
+    <div class="cave-entrance">
+        <div class="ambient-glow"></div>
+        
+        <header class="site-header">
+            <div class="logo">THE ENDLESS CHASM</div>
+        </header>
+
+        <main class="hero-section">
+            <div class="depth-indicator">
+                <span class="depth-label">DEPTH</span>
+                <span class="depth-value">0m</span>
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Descend Into</span>
+                    <span class="title-line title-emphasis">The Unknown</span>
+                </h1>
+                
+                 <p class="hero-description">
+                    Dorio awakens in chains, deep beneath the Himalayas. The old man's touch has transported him to a forgotten underworld where ancient guardians stir and the legendary Skeleton King waits in the depths. To escape, he must descend deeper still.
+                </p>
+
+                <button class="enter-btn" id="enterBtn">
+                    <span class="btn-text">BEGIN DESCENT</span>
+                    <span class="btn-arrow">↓</span>
+                </button>
+            </div>
+
+            <div class="environment-preview">
+                <div class="env-card">
+                    <div class="env-icon">⛓️</div>
+                    <div class="env-name">Chained Caverns</div>
+                </div>
+                <div class="env-card">
+                    <div class="env-icon">🌿</div>
+                    <div class="env-name">The Jungle of Imber</div>
+                </div>
+                <div class="env-card">
+                    <div class="env-icon">🪨</div>
+                    <div class="env-name">The Craglands</div>
+                </div>
+                <div class="env-card">
+                    <div class="env-icon">💀</div>
+                    <div class="env-name">Skeleton King's Domain</div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <section class="about-section">
+        <div class="content-container">
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>The Sherpa's Mind</h3>
+                    <p>Dorio possesses a sharp mind, gifted in mathematics and physics. He understands the hidden logic behind the natural world—skills that will help him survive the impossible.</p>
+                </div>
+                <div class="feature">
+                    <h3>The Old Man's Curse</h3>
+                    <p>A mysterious encounter on the mountain trail led to a surge of dark energy. Now Dorio finds himself trapped in an ancient underworld, chained and alone.</p>
+                </div>
+                <div class="feature">
+                    <h3>The Sleeping Bones</h3>
+                    <p>Ancient guardians sleep in the depths. The Skeleton King rules this forgotten realm. Dorio must face them all to find his way back to the surface.</p>
+                </div>
+                <div class="feature">
+                    <h3>Find Your Allies</h3>
+                    <p>Roku, Russel, John, and others await in the depths. Together, you must uncover the mountain's deepest secrets and defeat the darkness below.</p>
+                </div>
+            </div>
         </div>
-        <div class="contentSection"> <!-- Image Sub-section -->
-            <img src="./Website/ImageAssets/Placeholders/WidePlaceholder.png" alt="placeholder">
-        </div>
-        <div class="contentSection"> <!-- Content Sub-section -->
-            <h1>Header</h1>
-            <p>*insert text*</p>
-        </div>
-        <div class="contentSection"> <!-- Image Sub-section -->
-            <img src="./Website/ImageAssets/Placeholders/WidePlaceholder.png" alt="placeholder">
-        </div>
-        <div class="contentSection"> <!-- Content Sub-section -->
-            <h1>Header</h1>
-            <p>*insert text*</p>
-        </div>
-        <div class="contentSection"> <!-- Image Sub-section (Optional; undecided) -->
-            <img src="./Website/ImageAssets/Placeholders/WidePlaceholder.png" alt="placeholder">
-        </div>
-        <div class="contentSection"> <!-- Content Sub-section (Optional; undecided) -->
-            <h1>Header</h1>
-            <p>*insert text*</p>
-        </div>
-        <div class="contentSection"> <!-- Button Sub-section -->
-            <button id="embark" onclick="set_username('./Website/Exploration/Pages/start.html')">Embark</button>
+    </section>
+
+    <footer class="site-footer">
+        <p>The depth is infinite. The path is yours.</p>
+    </footer>
+
+    <!--  username entry -->
+    <div class="modal-overlay" id="usernameModal">
+        <div class="modal-container">
+            <div class="modal-glow"></div>
+            <h2 class="modal-title">Who art thou that walketh?</h2>
+            <form class="username-form" id="usernameForm">
+                <input 
+                    type="text" 
+                    id="usernameInput" 
+                    class="username-input" 
+                    placeholder="Enter Username"
+                    required
+                    autocomplete="off"
+                    maxlength="20"
+                />
+                <button type="submit" class="modal-enter-btn">
+                    <span>Awaken</span>
+                </button>
+            </form>
         </div>
     </div>
-    <div></div> <!-- Padding Div -->
+
+    <script src="./Website/lore_website/Scripts/main.js"></script>
 </body>
 </html>

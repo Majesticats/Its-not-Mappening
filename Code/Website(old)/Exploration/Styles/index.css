@@ -1,0 +1,90 @@
+/* Note that each section is organized alphabetically, not by scope */
+
+/* Metadata */
+/* Color Palette Definition */
+:root{
+    --base: #081020;
+    --dark: #040810;
+    --light: #182030;
+    --accent1: #084;
+    --accent1-dark: #063;
+    --accent1-light: #0a5;
+    --accent2: #048;
+    --accent2-dark: #036;
+    --accent2-light: #05a;
+    --text: #e0fff0;
+}
+
+/* Tag Selectors */
+body{
+    /* Splits body into 3 columns, with the middle being for content and the sides as padding */
+    display: grid;
+    grid-template-columns: 25vw 50vw 25vw;
+    /* removes black border around whole body */
+    margin: 0;
+}
+
+h1{
+    /* Title Big */
+    font-size: 32px;
+}
+
+html{
+    /* Set font standard */
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Set page background (should only be visible on sides) */
+    background-color: var(--dark);
+    /* Set text colour */
+    color: var(--text);
+}
+
+p{
+    background-color: var(--base);
+    padding: 32px;
+}
+
+/* Class Selectors */
+.contentSection{
+    /* Set padding */
+    padding: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    /* Set border for only the sides */
+    border: var(--accent2-dark) 3px solid;
+    border-top: 0;
+    border-bottom: 0;
+
+    text-align: center;
+    background-color: var(--light);
+}
+
+/* ID Selectors */
+#embark{
+    /* Set Colours */
+    color: var(--text);
+    background-color: var(--base);
+    border-color: var(--accent1-dark);
+    /* Set Font */
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Set Padding */
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* Set Border */
+    border-radius: 10px;
+    /* Set Margin */
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+#embark:hover{
+    border-color: white;
+    border-style: solid;
+    box-shadow: 0 0 5px 2px var(--accent1-light), inset 0 0 5px 2px var(--accent1-light);
+}
+
+#title{
+    font-size: 64px;
+}

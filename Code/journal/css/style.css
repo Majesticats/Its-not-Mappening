@@ -1,0 +1,376 @@
+/* --------------------------------------------
+   🪶 Caveman Journal — Refined & Minimal Stylesheet
+--------------------------------------------- */
+/* 
+   Design goals:
+   - Create a soft, book-like aesthetic with legible typography.
+   - Keep layout responsive and centered.
+   - Separate visual structure (book, pages) from interactive components.
+   - Maintain accessibility and smooth transitions.
+*/
+
+/* ===========================================================
+   1️⃣ BASE RESET
+   -----------------------------------------------------------
+   Removes default browser margins/padding and ensures consistent
+   box-sizing model for predictable sizing across all elements.
+=========================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================================================
+   2️⃣ GLOBAL LAYOUT
+   -----------------------------------------------------------
+   Centers the book on screen, sets tone and base font.
+   Uses min-height for better mobile stability.
+=========================================================== */
+body {
+    font-family: "Georgia", serif;
+    color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* align to the top instead of center */
+    min-height: 100vh;
+    /* safer for devices with dynamic viewport height */
+    background-color: #f4f1ea;
+    /* subtle parchment fallback color */
+    overflow: hidden;
+    
+
+}
+
+
+/* -----------------------------------------------------------
+   Hidden Labels — Accessibility
+   Keeps semantic HTML labels but hides visually.
+   Useful for screen readers.
+----------------------------------------------------------- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ===========================================================
+   3️⃣ BOOK LAYOUT
+   -----------------------------------------------------------
+   Main visual container — two-page spread using CSS grid.
+   Background mimics an open book with light shadow and texture.
+=========================================================== */
+.book {
+    margin-top: -30px;
+    position: relative;
+    width: 80vw;          /* fills almost entire viewport width */
+    max-width: 1600px;    /* allows much larger size on big screens */
+    aspect-ratio: 4 / 3;  /* taller proportions for more “book-like” look */
+    background: #fdfbf6 center / cover no-repeat url("../assets/images/background-placeholder.webp");
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+
+    /* left & right pages */
+    padding: 9% 12% 14%;
+    border-radius: 8px;
+    gap: 1rem;
+    box-shadow: none;
+    /* soft shadow for realism */
+}
+
+
+
+/* ===========================================================
+   4️⃣ LEFT PAGE (Form)
+   -----------------------------------------------------------
+   Contains input fields for writing new entries.
+   Layout is vertical and intentionally minimal.
+=========================================================== */
+.page-left {
+    border: 1px solid red;
+    padding: 0.75rem 0.75rem 1rem; /* small, won’t ruin alignment */
+}
+
+.page-left form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 0;
+    /* removes default fieldset border */
+}
+
+.page-left legend {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: #2b2b2b;
+}
+
+/* -----------------------------------------------------------
+   Input and Textarea Styling
+   Creates light, tactile surfaces like paper — not flat white.
+   Smooth focus feedback to simulate ink press.
+----------------------------------------------------------- */
+input[type="text"],
+textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid rgba(102, 75, 43, 0.35);
+    border-radius: 4px;
+    padding: 0.6rem 0.75rem;
+    color: #2b1a10;
+    font-family: "IM Fell English SC", serif;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    resize: none;
+    transition: all 0.25s ease;
+    backdrop-filter: blur(1px);
+    /* subtle depth on modern browsers */
+}
+
+input:focus,
+textarea:focus {
+    background: rgba(255, 248, 235, 0.25);
+    /* slight warmth */
+    border-color: rgba(145, 94, 40, 0.6);
+    box-shadow: 0 0 6px rgba(145, 94, 40, 0.25);
+    outline: none;
+}
+
+/* -----------------------------------------------------------
+   Button Styling
+   Earthy tones, slight press animation.
+   Matches the journal’s parchment color scheme.
+----------------------------------------------------------- */
+button {
+    align-self: flex-start;
+    background-color: #b28c55;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #a1794a;
+    transform: translateY(-1px);
+    /* subtle lift effect */
+}
+
+/* ===========================================================
+   5️⃣ RIGHT PAGE (Archive)
+   -----------------------------------------------------------
+   Displays all saved entries — scrollable paper texture.
+=========================================================== */
+.page-right {
+    margin-top: 44px;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    overflow-y: auto;
+    /* scroll when content exceeds height */
+    background: repeating-linear-gradient(transparent 0px,
+            transparent 23px,
+            rgba(0, 0, 0, 0.04) 24px);
+    /* faint horizontal lines like notebook paper */
+    border: 1px solid blue;
+    height: 100%;
+}
+
+/* Custom Scrollbar — minimal aesthetic */
+.page-right::-webkit-scrollbar {
+    width: 6px;
+}
+
+.page-right::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+/* ===========================================================
+   6️⃣ ARCHIVE ITEMS
+   -----------------------------------------------------------
+   Each entry appears like a written paragraph with date stamp.
+   Includes fade-in animation and a delete button.
+=========================================================== */
+.nav-archive ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    font-size: 0.9rem;
+}
+
+.archive-item {
+    position: relative;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    animation: fade-in 0.4s ease forwards;
+    opacity: 0;
+    transform: translateY(-3px);
+    /* slight slide-in motion */
+}
+
+.archive-item h4,
+.archive-item p,
+.archive-item time {
+    font-family: "IM Fell English SC", serif;
+}
+
+/* Author name */
+.archive-item h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #1e1e1e;
+    margin-bottom: 0.25rem;
+}
+
+/* Entry text */
+.archive-item p {
+    margin: 0.2rem 0 0.5rem;
+    color: #333;
+    white-space: pre-line;
+    /* preserves newlines */
+}
+
+/* Timestamp */
+.archive-item time {
+    position: absolute;
+    top: 0;
+    right: 1.4rem;
+    /* leave space for delete button */
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+/* Edited label */
+.edited-label {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Entry fade-in animation */
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -----------------------------------------------------------
+   Delete Button — subtle, blends into parchment.
+   Grows and turns red when hovered for intuitive feedback.
+----------------------------------------------------------- */
+.delete-btn {
+    position: absolute;
+    top: 0.05rem;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 1.05rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+    /* ensures it stays above the timestamp */
+    opacity: 0.6;
+    transition: color 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+    font-family: "IM Fell English SC", serif;
+}
+
+.delete-btn:hover {
+    color: #8a2b2b;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* ===========================================================
+   7️⃣ SEARCH & SORT CONTROLS
+   -----------------------------------------------------------
+   Small toolbar for filtering entries.
+   Matches the journal aesthetic while keeping clarity.
+=========================================================== */
+.archive-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Search input field */
+#searchInput {
+    flex: 1;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-family: "IM Fell English SC", serif;
+    background: rgba(255, 255, 255, 0.4);
+    color: #2b1a10;
+    transition: border-color 0.2s ease;
+}
+
+#searchInput:focus {
+    border-color: rgba(145, 94, 40, 0.6);
+    outline: none;
+}
+
+/* Dropdown (sort order selector) */
+#sortSelect {
+    height: 2rem;
+    font-family: "IM Fell English SC", serif;
+    border: 1px solid rgba(102, 75, 43, 0.35);
+    background: rgba(255, 255, 255, 0.05);
+    color: #2b1a10;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+}
+
+/* Clear/Reset filters button */
+#clearFilters {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.1rem;
+    background: transparent;
+    border: none;
+    color: rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.15s ease;
+}
+
+#clearFilters:hover {
+    color: #8a2b2b;
+    transform: scale(1.1);
+}
+
+/* ===========================================================
+   8️⃣ BLINKING INK CARET
+   -----------------------------------------------------------
+   Decorative effect — adds a flickering caret to simulate
+   a handwriting cursor while typing in the textarea.
+=========================================================== */
+.ink-caret {
+    border-right: 2px solid rgba(80, 50, 20, 0.5);
+    padding-right: 1px;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}

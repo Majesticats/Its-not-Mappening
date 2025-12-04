@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Endless Chasm — Locations</title>
+    <link rel="stylesheet" href="Styles/template.css" />
+  </head>
+
+  <body>
+    <div class="cave-entrance">
+      <header class="site-header hero">
+        <div class="brand">
+          <div>
+            <!-- Updated to match Dorio's story -->
+            <h1>The Journey Begins</h1>
+            <p class="muted">Into the Forgotten Depths</p>
+          </div>
+        </div>
+
+        <div class="muted">
+          Location: <strong id="area-name">The Chained Cavern</strong>
+        </div>
+      </header>
+
+      <main class="content-area">
+      <section class="main-col" id="areas">
+        <!-- Updated story content to match Dorio's awakening -->
+        <article class="panel">
+          <h2>Awakening</h2>
+          <p>Your wrists ache from the cold iron chains. The last thing you remember is the old man's touch on the mountain trail—that surge of strange energy coursing through your body. Now you're here, in this damp cave, the smell of earth heavy in your lungs. How long were you unconscious? Five hours? Five days?</p>
+          <p>As a Sherpa, you've guided countless travelers through mountain passes. You know the Himalayas like your own heartbeat. But this... this is something else entirely. The old man spoke of "ancient guardians" and "sleeping bones." At the time, it sounded like fever dreams. Now, trapped beneath tons of rock, his words feel like prophecy.</p>
+        </article>
+
+        <article class="panel">
+          <h2>The Guardian's Challenge</h2>
+          <p>Ancient symbols glow faintly on the cave walls—a grid pattern, nine squares arranged in perfect order. Your mathematical mind recognizes it immediately: a logic puzzle, older than memory. The old man said you carry "the key of numbers." Perhaps this is what he meant.</p>
+          <p>You must solve this puzzle to break free from your chains and unlock the deeper passages. The Guardian tests all who enter these depths.</p>
+        </article>
+
+        <article class="panel game-container">
+          <h2 class="game-title">The Guardian's Test</h2>
+          <p class="game-subtitle">Use your logic to defeat the ancient puzzle</p>
+          <div id="game-status" class="game-status">Your turn (X)</div>
+          <div id="game-board" class="game-board"></div>
+          <div class="game-controls">
+            <button id="player-toggle" class="game-toggle" aria-pressed="false">Play as: X</button>
+            <button id="game-reset" class="game-reset">Try Again</button>
+          </div>
+          <div id="unlock-message" class="unlock-message" style="display: none;">
+            The chains shatter! The passages ahead open to your will.
+          </div>
+        </article>
+
+        <article class="panel">
+          <h2>What Lies Ahead</h2>
+          <p>Breaking the chains is only the beginning. Somewhere in these depths, the Skeleton King waits—ruler of this forgotten underworld. The old man's words echo in your mind: "the sleeping bones." You must descend deeper, find allies, and uncover the truth about why you were brought here.</p>
+        </article>
+
+        <div class="image-grid">
+          <div>
+            <h1 class="image-title">Imber</h1>
+            <a href="imber.html">
+            <div class="image-slot panel">
+              <img src="../../Assets/Release/Environment/Imber.png" alt="Imber">
+            </div>
+            </a>
+          </div>
+          <div>
+            <h1 class="image-title">The Craglands</h1>
+            <div class="image-slot panel">
+              <a href="theCraglands.html"><img src="../../Assets/Release/Environment/TheWebcove.png" alt="The Craglands"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sidebar -->
+      <div class="sidebar">
+        <div class="side-card">
+          <div class="meta">
+            <div class="name">The Old Man's Echo</div>
+            <div class="line">"You carry the key of numbers, young Sherpa. Only with logic and courage can you face what sleeps below..."</div>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div class="meta">
+            <div class="name">Roku's Voice (distant)</div>
+            <div class="line">"Is someone there? I hear footsteps... If you can hear me, head toward the crystal light. We need to talk."</div>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div class="meta">
+            <div class="name">Ancient Inscription</div>
+            <div class="line">"Those who solve the Guardian's test may pass. Those who fail remain forever bound."</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+      <nav class="bottom-nav" aria-label="Area navigation">
+        <button onclick="history.back()" class="btn">◀ Back</button>
+        <a href="imber.html" class="btn">Imber ▶</a>
+        <a href="theCraglands.html" class="btn">The Craglands ▶</a>
+      </nav>
+    </div>
+
+    <script src="Scripts/tictactoe.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Endless Chasm — Locations</title>
-    <link rel="stylesheet" href="Styles/page1.css" />
+    <link rel="stylesheet" href="Styles/template.css" />
   </head>
 
   <body>
@@ -58,14 +58,19 @@
         </article>
 
         <div class="image-grid">
-          <div class="image-slot panel">
-            <img src="Images/Gloden_Picture_1.png" alt="The Chained Cavern">
+          <div>
+            <h1 class="image-title">Imber</h1>
+            <a href="imber.html">
+            <div class="image-slot panel">
+              <img src="../../Assets/Release/Environment/Imber.png" alt="Imber">
+            </div>
+            </a>
           </div>
-          <div class="image-slot panel">
-            <img src="Images/Gloden_Picture_1.png" alt="Ancient Chains">
-          </div>
-          <div class="image-slot panel">
-            <img src="Images/Gloden_Picture_1.png" alt="Guardian Symbols">
+          <div>
+            <h1 class="image-title">The Craglands</h1>
+            <div class="image-slot panel">
+              <a href="theCraglands.html"><img src="../../Assets/Release/Environment/TheWebcove.png" alt="The Craglands"></a>
+            </div>
           </div>
         </div>
       </section>
@@ -96,10 +101,9 @@
     </main>
 
       <nav class="bottom-nav" aria-label="Area navigation">
-        <a href="index.html" class="btn">◀ Back1</a>
-        <a href="#" class="btn">Back2</a>
-        <a href="#" class="btn">Forward1</a>
-        <a href="#" class="btn">Forward2 ▶</a>
+        <button onclick="history.back()" class="btn">◀ Back</button>
+        <a href="imber.html" class="btn">Imber ▶</a>
+        <a href="theCraglands.html" class="btn">The Craglands ▶</a>
       </nav>
     </div>
 

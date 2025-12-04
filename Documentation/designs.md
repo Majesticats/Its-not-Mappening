@@ -2,7 +2,7 @@
 
 ## Team name: It's Not Mappening
 
-## Project/product name: Cave Diving
+## Project/product name: The Endless Chasm
 
 ## Contact person and email
 Bruce Fernandes, bruce2005.ind@gmail.com 

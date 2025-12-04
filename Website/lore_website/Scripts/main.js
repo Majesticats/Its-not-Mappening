@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Store username in localStorage for use in game
       localStorage.setItem("chasmUsername", username);
       // Navigate to location page
-      window.location.href = "./Website/lore_website/page1.html";
+      window.location.href = "./Website/lore_website/start.html";
     }
   });
 

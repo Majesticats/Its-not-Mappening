@@ -45,7 +45,7 @@ function generateCards(cardArray) {
           <img src="${card.img}" alt="${card.name}">
         </div>
         <div class="card-back">
-          <img src="assets/img/back.png" alt="back">
+          <!--<img src="assets/img/back.png" alt="back">-->
         </div>
       </div>
     `;
@@ -172,6 +172,7 @@ function checkWin() {
     stopTimer();
     setTimeout(() => {
       alert(`You won in ${moves} moves and ${time} seconds!`);
+      location = "../../../Website/lore_website/helicon.html";
     }, 300);
   }
 }

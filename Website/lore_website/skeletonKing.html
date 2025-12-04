@@ -3,8 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Endless Chasm — The Craglands</title>
-    <link rel="stylesheet" href="Styles/template.css" />
+    <title>The Endless Chasm — Slicksyr</title>
+    <link rel="stylesheet" href="Styles/template.css"/>
+    <style>
+        #image-container{
+            margin: auto;
+        }
+        #slicksyrImg{
+            height: 420px;
+            width: 720px;
+        }
+    </style>
   </head>
 
   <body>
@@ -18,7 +27,7 @@
         </div>
 
         <div class="muted">
-          Location: <strong id="area-name">The Craglands</strong>
+          Location: <strong id="area-name">Slicksyr</strong>
         </div>
       </header>
 
@@ -26,28 +35,19 @@
       <section class="main-col" id="areas">
         <article class="panel">
           <h2>*Insert Title*</h2>
-          <p>*Insert general description of The Craglands*</p>
+          <p>*Insert general description of The Skeleton King and his chamber*</p>
           <p>*Use multiple p tags to get nice spacing*</p>
         </article>
 
         <article class="panel">
           <h2>*Insert Title*</h2>
-          <p>*Insert description of one aspect of The Craglands*</p>
+          <p>*Tactfully foreshadow sudoku without giving it away; along with flavour text / area description*</p>
           <p>*Use multiple p tags to get nice spacing*</p>
         </article>
 
-        <article class="panel">
-          <h2>*Insert Title*</h2>
-          <p>*Insert description of another aspect of The Craglands*</p>
-          <p>*Use multiple p tags to get nice spacing*</p>
-        </article>
-
-        <div class="image-grid">
-          <div class="image-slot panel">
-            <img src="../../Assets/Release/Environment/TheBurrow.png" alt="The Burrow">
-          </div>
-          <div class="image-slot panel">
-            <img src="../../Assets/Release/Environment/TheWebcove.png" alt="The Webcove">
+        <div id="image-container">
+          <div class="image-slot panel" id="slicksyrImg">
+            <img src="../../Assets/Release/Environment/TheSkeletonKing.png" alt="Slicksyr">
           </div>
         </div>
       </section>
@@ -67,21 +67,13 @@
             <div class="line">*Insert either user's thoughts or quote from a character*</div>
           </div>
         </div>
-
-        <div class="side-card">
-          <div class="meta">
-            <div class="name">*Insert Title*</div>
-            <div class="line">*Insert quote from a character*</div>
-          </div>
-        </div>
       </div>
     </main>
 
       <nav class="bottom-nav" aria-label="Area navigation">
         <a href="start.html" class="btn">◀ Start</a>
         <button onclick="history.back()" class="btn">◀ Back</button>
-        <a href="imber.html" class="btn">Imber ▶</a>
-        <a href="slicksyr.html" class="btn">Slicksyr ▶</a>
+        <a href="../../Code/Sudoku/index.html" class="btn">THE FINAL CHALLENGE ▶</a>
       </nav>
     </div>
   </body>

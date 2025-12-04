@@ -220,9 +220,9 @@ header.hero::after {
 
 .image-slot:hover {
   background-color: var(--base);
-  border-color: var(--accent1-light);
+  border-color: var(--accent2-light);
   transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0, 136, 68, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 68, 136, 0.3);
 }
 
 .image-slot:hover::after {

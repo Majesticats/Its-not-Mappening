@@ -172,7 +172,7 @@ function checkWin() {
     stopTimer();
     setTimeout(() => {
       alert(`You won in ${moves} moves and ${time} seconds!`);
-      location = "../../../Website/lore_website/helicon.html";
+      location = "https://majesticats.github.io/Its-not-Mappening/Website/lore_website/helicon.html";
     }, 300);
   }
 }

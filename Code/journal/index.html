@@ -11,54 +11,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=IM+Fell+English+SC&display=swap"
         rel="stylesheet" />
+        <style>
+      :root {
+        --base: #081020;
+        --dark: #040810;
+        --light: #182030;
+        --accent1: #008844;
+        --accent1-dark: #006633;
+        --accent1-light: #00aa55;
+        --accent2: #004488;
+        --accent2-dark: #003366;
+        --accent2-light: #0055aa;
+        --text: #e0fff0;
+      }
+      #btn {
+        background: linear-gradient(135deg, var(--accent1) 0%, var(--accent1-dark) 100%);
+        color: var(--text);
+        padding: 0.8rem 1.5rem;
+        border: 2px solid var(--accent1-light);
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 32px;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: "Courier New", monospace;
+        letter-spacing: 0.1em;
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 2%;
+        top: -1%;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 136, 68, 0.2);
+      }
+
+      #btn:hover {
+        border-color: var(--text);
+        box-shadow: 0 4px 20px rgba(0, 170, 85, 0.4);
+        transform: translateY(-2px);
+        color: rgb(6, 5, 5);
+      }
+    </style>
 </head>
 
 <body>
-    <main>
-        <div class="journal">
-            <div class="book" role="img" aria-label="Open blank journal with two pages">
-                <div class="page-left">
-                    <form>
-                        <fieldset>
-                            <legend>New comment entry</legend>
-
-                            <p>
-                                <label for="username" class="visually-hidden">Name</label>
-                                <input type="text" id="username" name="username" placeholder="my name is" />
-                            </p>
-
-                            <p>
-                                <label for="comment" class="visually-hidden">Entry</label>
-                                <textarea id="comment" name="comment" rows="10" cols="45" required maxlength="500"
-                                    placeholder="write your note..."></textarea>
-                            </p>
-
-                            <p>
-                                <button>Comment</button>
-                            </p>
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="page-right" tabindex="0" aria-label="Archive">
-                    <div class="archive-controls">
-                        <input type="text" id="searchInput" placeholder="Search entries..." />
-                        <select id="sortSelect">
-                            <option value="newest">Newest first</option>
-                            <option value="oldest">Oldest first</option>
-                        </select>
-                        <button id="clearFilters" title="Reset filters">✕</button>
-
-                    </div>
-
-                    <nav class="nav-archive" aria-label="Journal archive">
-                        <ul></ul>
-                    </nav>
-                </div>
-            </div>
+  <main>
+    <div class="journal">
+      <div class="book" role="img" aria-label="Open blank journal with two pages">
+        <!-- Nav button -->
+        <button onclick="history.back()" id="btn">◀ Back</button>
+        <div class="page-left">
+          <form>
+            <fieldset>
+              <legend>New Entry</legend>
+              <p>
+                  <label for="username" class="visually-hidden">Name</label>
+                  <input type="text" id="username" name="username" placeholder="my name is" />
+              </p>
+              <p>
+                  <label for="comment" class="visually-hidden">Entry</label>
+                  <textarea id="comment" name="comment" rows="10" cols="45" required maxlength="500"
+                      placeholder="write your note..."></textarea>
+              </p>
+              <p>
+                  <button>Submit</button>
+              </p>
+            </fieldset>
+          </form>
         </div>
-    </main>
+        <div class="page-right" tabindex="0" aria-label="Archive">
+          <div class="archive-controls">
+            <input type="text" id="searchInput" placeholder="Search entries..." />
+            <select id="sortSelect">
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+            </select>
+            <button id="clearFilters" title="Reset filters">✕</button>
+          </div>
 
-    <script src="js/components/script.js"></script>
+          <nav class="nav-archive" aria-label="Journal archive">
+              <ul></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/components/script.js"></script>
 </body>
-
 </html>

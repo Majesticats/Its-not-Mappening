@@ -9,6 +9,21 @@
    - Maintain accessibility and smooth transitions.
 */
 
+/* colors */
+:root {
+  --base: #081020;
+  --dark: #040810;
+  --light: #182030;
+  --accent1: #008844;
+  --accent1-dark: #006633;
+  --accent1-light: #00aa55;
+  --accent2: #004488;
+  --accent2-dark: #003366;
+  --accent2-light: #0055aa;
+  --text: #e0fff0;
+  --gap: 1.25rem;
+}
+
 /* ===========================================================
    1️⃣ BASE RESET
    -----------------------------------------------------------
@@ -31,13 +46,13 @@
 =========================================================== */
 body {
     font-family: "Georgia", serif;
-    color: #2b2b2b;
+    color: var(--text);
     display: flex;
     justify-content: center;
     align-items: flex-start;  /* align to the top instead of center */
     min-height: 100vh;
     /* safer for devices with dynamic viewport height */
-    background-color: #f4f1ea;
+    background-color: var(--dark);
     /* subtle parchment fallback color */
     overflow: hidden;
     
@@ -69,12 +84,13 @@ body {
    Background mimics an open book with light shadow and texture.
 =========================================================== */
 .book {
-    margin-top: -30px;
+    /* margin-top: -30px; */
     position: relative;
-    width: 80vw;          /* fills almost entire viewport width */
-    max-width: 1600px;    /* allows much larger size on big screens */
+    /* width: 80vw;          fills almost entire viewport width */
+    height: 100vh;
+    /* max-width: 1600px;    allows much larger size on big screens */
     aspect-ratio: 4 / 3;  /* taller proportions for more “book-like” look */
-    background: #fdfbf6 center / cover no-repeat url("../assets/images/background-placeholder.webp");
+    background: #fdfbf6 center / cover no-repeat url("../../../Assets/Release/Journal_writing/TextEditorBackground.png");
     display: grid;
     grid-template-columns: 1.1fr 1fr;
 
@@ -95,7 +111,7 @@ body {
    Layout is vertical and intentionally minimal.
 =========================================================== */
 .page-left {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0.75rem 0.75rem 1rem; /* small, won’t ruin alignment */
 }
 
@@ -175,7 +191,7 @@ button:hover {
    Displays all saved entries — scrollable paper texture.
 =========================================================== */
 .page-right {
-    margin-top: 44px;
+    margin-top: 50px;
     border-radius: 6px;
     padding: 0.5rem 0.75rem;
     overflow-y: auto;
@@ -184,7 +200,7 @@ button:hover {
             transparent 23px,
             rgba(0, 0, 0, 0.04) 24px);
     /* faint horizontal lines like notebook paper */
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 100%;
 }
 

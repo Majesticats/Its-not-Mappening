@@ -66,7 +66,7 @@
               <legend>New Entry</legend>
               <p>
                   <label for="username" class="visually-hidden">Name</label>
-                  <input type="text" id="username" name="username" placeholder="my name is" />
+                  <input type="text" id="username" name="username" placeholder="my name is" value="username"/>
               </p>
               <p>
                   <label for="comment" class="visually-hidden">Entry</label>
@@ -97,5 +97,8 @@
     </div>
   </main>
   <script src="js/components/script.js"></script>
+  <script>
+    document.getElementById("username").setAttribute("value", localStorage.chasmUsername);
+  </script>
 </body>
 </html>

@@ -231,7 +231,6 @@ form.addEventListener("submit", e => {
   }
 
   // --- Reset form fields and UI back to default state
-  nameInput.value = "";
   bodyInput.value = "";
   bodyInput.focus();
   submitBtn.textContent = "Submit";

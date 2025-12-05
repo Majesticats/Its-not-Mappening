@@ -234,7 +234,7 @@ form.addEventListener("submit", e => {
   nameInput.value = "";
   bodyInput.value = "";
   bodyInput.focus();
-  submitBtn.textContent = "Comment";
+  submitBtn.textContent = "Submit";
   submitBtn.style.backgroundColor = "#b28c55";
 });
 

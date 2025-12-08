@@ -81,31 +81,78 @@ This section describes the structure of the cave system, answering the questions
 **Navigation Method**
 - Navigation Style: Clickable images
 - Rationale: 
-
-**Branching and Path Choices**
-!!! (Ignored for now)
+    Simple to implement using standard HTML links.
+    Visually intuitive: players click the tunnel they want to enter.
+    Easy for team members to extend new branches without breaking existing pages.
 
 **Access Restrictions**
-- Are some paths locked until a puzzle is solved? !!!
-- Access logic description: !!!
+- Some pathways may be locked behind puzzle completion.
 
 --- 
 
 #### World Structure
-
-**Cave system structure**
-- Number of main chambers: !!! 
-- Chamber types include:
-    Type A
-    Type B
-    !!!
-- Chamber layout description:
-!!! (briefly describe)
-
-**World Map Summary**
-!!! (One paragraph summarizing structure)
+The world of *The Endless Chasm* is divided into **three major regions**: Imber, The Craglands, and Helicon. Each region contains its own environment, locations, and unique creatures. These regions function as the primary “zones” of the game world and are made up of chambers that players navigate through using the shared navigation system.
 
 ---
+
+#### **1. Imber — Rain-Soaked Frontier**
+
+**Environment:**  
+A stormy, rainy region filled with thunder, lightning, and slippery terrain. Imber is isolated and mysterious, shaped by distant mountains and abandoned settlements.
+
+**Key Locations:**  
+- **Abandoned Hill Village (Location 1A):**  
+  A small remote village of 15–20 old, deserted houses in a hilly area. Most residents have mysteriously vanished.  
+- **Mountain Path (Location 1B):**  
+  A challenging route leading toward a nearby mountain. Few houses and shops remain along the dangerous, obstacle-filled path.
+
+**Creatures:**  
+- **Centaur:** A mythical guardian of the mountain path.  
+- **Minions:** Bat-like supernatural creatures, neither human nor ghost.
+
+---
+
+#### **2. The Craglands — Sharp Stone and Shadows**
+
+**Environment:**  
+A cavern system filled with jagged rocks, open craters, slippery hills, and lurking webs. Moisture drips from above, shaping both razor-sharp and smooth terrain.
+
+**Key Locations:**  
+- **The Burrow:**  
+  A hidden underground commune of exiles accessed through a small crevice.  
+- **The Webcove:**  
+  A crater with a lake at the bottom, covered in spider webs across sharp boulders.  
+- **Slicksyr:**  
+  A wet, smooth rocky hill constantly drenched by falling water.
+
+**Creatures:**  
+- **Idwer:** Goblin-like, intelligent wall-climbers.  
+- **Driders:** Giant spider–human hybrids dominating parts of the Craglands.
+
+---
+
+#### **3. Helicon — The Mountain of Darkness**
+
+**Environment:**  
+A pitch-black cave inside a massive mountain. The player must use a torch powered by collectible fuel to navigate deeper paths.
+
+**Key Locations:**  
+- **Hall of Signs (Location 3A):**  
+  A chamber filled with glowing ancient symbols and roaming skeletal warriors. Puzzle-solving is required to progress.  
+- **Throne of the Skeleton King (Location 3B):**  
+  The final chamber inhabited by the Skeleton King, an ancient sherpa corrupted by dark magic.
+
+**Creatures:**  
+- **Skeleton Army:** Animated bones of those who died in the mountain.  
+- **Skeleton King:** The final antagonist of Helicon.
+
+---
+
+#### **World Map Summary**
+
+*The Endless Chasm* consists of three interconnected regions—Imber, The Craglands, and Helicon—each offering unique atmospheres, challenges, and discoveries. Imber introduces abandoned villages and storm-heavy terrain; The Craglands expands into sharp, dangerous caverns inhabited by driders and exiles; and Helicon serves as the darkest, puzzle-focused region guarded by skeletal creatures. Together, these regions form a modular world structure that supports non-linear exploration and progressive lore discovery.
+
+--- 
 
 ### Puzzle, mini-challenge Triggers and Progression Rules
 

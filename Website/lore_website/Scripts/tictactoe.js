@@ -45,12 +45,12 @@ class TicTacToe {
 
       if (cell === "X") {
         const img = document.createElement("img")
-        img.src = "../../ImageAssets/X-Tile.png"
+        img.src = "../ImageAssets/X-Tile-Small.png"
         img.alt = "X"
         cellElement.appendChild(img)
       } else if (cell === "O") {
         const img = document.createElement("img")
-        img.src = "../../ImageAssets/O-Tile.png"
+        img.src = "../ImageAssets/O-Tile-Small.png"
         img.alt = "O"
         cellElement.appendChild(img)
       }

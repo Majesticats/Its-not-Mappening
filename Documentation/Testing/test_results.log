@@ -1,0 +1,14 @@
+======================================
+ Automated Test Suite - The Endless Chasm
+======================================
+
+NAV-01 : PASS
+NAV-02 : FAIL
+SUD-01 : PASS
+MEM-01 : PASS
+TTT-01 : PASS
+JRN-01 : PASS
+
+--------------------------------------
+All tests completed. Results saved to test_results.log
+--------------------------------------
